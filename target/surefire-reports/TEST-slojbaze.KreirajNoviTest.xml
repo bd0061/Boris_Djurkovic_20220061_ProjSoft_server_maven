@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="slojbaze.KreirajNoviTest" time="6.946" tests="50" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\test-classes;C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\classes;C:\Users\Djurkovic\.m2\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Users\Djurkovic\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Djurkovic\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\Djurkovic\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;C:\Users\Djurkovic\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Djurkovic\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Djurkovic\.m2\repository\org\reflections\reflections\0.10.2\reflections-0.10.2.jar;C:\Users\Djurkovic\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar;C:\Users\Djurkovic\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\Djurkovic\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Budapest"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\Djurkovic\AppData\Local\Temp\surefire1895608306264817275\surefirebooter-20250707225040019_3.jar C:\Users\Djurkovic\AppData\Local\Temp\surefire1895608306264817275 2025-07-07T22-50-39_776-jvmRun1 surefire-20250707225040019_1tmp surefire_0-20250707225040019_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\test-classes;C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\classes;C:\Users\Djurkovic\.m2\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Users\Djurkovic\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Djurkovic\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\Djurkovic\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;C:\Users\Djurkovic\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Djurkovic\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Djurkovic\.m2\repository\org\reflections\reflections\0.10.2\reflections-0.10.2.jar;C:\Users\Djurkovic\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar;C:\Users\Djurkovic\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\Djurkovic\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Djurkovic"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Djurkovic\AppData\Local\Temp\surefire1895608306264817275\surefirebooter-20250707225040019_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.1+11-39"/>
+    <property name="user.name" value="Djurkovic"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Djurkovic\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DJURKO~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.2.3"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Lua;C:\Program Files\nodejs\;C:\mingw64\bin;C:\Program Files\Microsoft Network Monitor 3\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-15.0.1\bin;C:\Program Files\Git\cmd;C:\Program Files\MATLAB\R2024b\bin;C:\Program Files\Calibre2\;C:\Program Files\PuTTY\;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python310\;C:\Users\Djurkovic\scoop\shims;C:\Ruby27-x64\bin;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python39\;C:\Users\Djurkovic\AppData\Local\Microsoft\WindowsApps;C:\Users\Djurkovic\AppData\Local\Microsoft\WindowsApps;C:\Users\Djurkovic\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Djurkovic\AppData\Local\Programs\Python;C:\ffmpeg\bin;C:\Users\Djurkovic\AppData\Local\atom\bin;C:\Users\Djurkovic\AppData\Roaming\npm;C:\Users\Djurkovic\miniconda3\Library\bin;C:\Users\Djurkovic\miniconda3\Scripts;C:\Users\Djurkovic\miniconda3\condabin;C:\Users\Djurkovic\.dotnet\tools;C:\Users\Djurkovic\AppData\Local\Pandoc\;C:\Users\Djurkovic\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\JetBrains\CLion 2024.2.1\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.1+11-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="test01_KreirajNoviDozvola" classname="slojbaze.KreirajNoviTest" time="0.06">
+    <system-out><![CDATA[Otvaram konekciju sa test bazom...
+Uspesno je uspostavljena konekcija sa test bazom podataka.
+Brisem sve podatke iz test baze...
+Uspesno je resetovana test baza podataka.
+---------------------------------------------------------------------------------
+Ubacivanje ispravne dozvole
+[INFO] 2025-07-07 22:50:45 - Uspesno ubacivanje entiteta [Dozvola{id=1, kategorija=B}]
+[INFO] 2025-07-07 22:50:45 -   ************** LOG BROKERA **************
+null
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:45 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravne dozvole uspesno
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test02_KreirajNoviDozvolaNepostojecaKategorija" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravne dozvole - nepostojeca kategorija
+[ERROR] 2025-07-07 22:50:45 - Greska pri ubacivanju entiteta Dozvola{id=null, kategorija=Z}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravne dozvole sa nepostojecom kategorijom nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test03_KreirajNoviDozvolaNullKategorija" classname="slojbaze.KreirajNoviTest" time="0.002">
+    <system-out><![CDATA[Ubacivanje neispravne dozvole - null kategorija
+[ERROR] 2025-07-07 22:50:45 - Greska pri ubacivanju entiteta Dozvola{id=null, kategorija=null}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravne dozvole sa null kategorijom nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test04_KreirajNoviVozac" classname="slojbaze.KreirajNoviTest" time="0.051">
+    <system-out><![CDATA[Ubacivanje ispravnog vozaca
+[INFO] 2025-07-07 22:50:45 - Uspesno ubacivanje entiteta [Vozac{id=1, ime=Marko, prezime=Markovic, email=markomarkovic@gmail.com, dozvola=Dozvola{id=1, kategorija=null}}]
+[INFO] 2025-07-07 22:50:45 -   ************** LOG BROKERA **************
+
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:45 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravnog vozaca je uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test05_KreirajNoviVozacLosSpoljnjikljuc" classname="slojbaze.KreirajNoviTest" time="0.557">
+    <system-out><![CDATA[Ubacivanje neispravnog vozaca - nevalidan spoljnji kljuc
+Ubacivanje neispravnog vozaca nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test06_KreirajNoviVozacNullEmail" classname="slojbaze.KreirajNoviTest" time="0.002">
+    <system-out><![CDATA[Ubacivanje neispravnog vozaca - null email
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Vozac{id=null, ime=Jovan, prezime=Jovanovic, email=null, dozvola=Dozvola{id=1, kategorija=null}}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozaca nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test07_KreirajNoviVozacLosEmail" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog vozaca - neispravan email
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Vozac{id=null, ime=Jovan, prezime=Jovanovic, email=fjfjsekjesf, dozvola=Dozvola{id=1, kategorija=null}}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozaca nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test08_KreirajNoviVozacNullIme" classname="slojbaze.KreirajNoviTest" time="0.002">
+    <system-out><![CDATA[Ubacivanje neispravnog vozaca - null ime
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Vozac{id=null, ime=null, prezime=Jovanovic, email=jovanjovanovic@gmail.com, dozvola=Dozvola{id=1, kategorija=null}}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozaca nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test09_KreirajNoviVozacNullPrezime" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog vozaca - null prezime
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Vozac{id=null, ime=Jovan, prezime=null, email=jovanjovanovic@gmail.com, dozvola=Dozvola{id=1, kategorija=null}}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozaca nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test10_KreirajNoviZaposleni" classname="slojbaze.KreirajNoviTest" time="0.342">
+    <system-out><![CDATA[Ubacivanje ispravnog zaposlenog
+[INFO] 2025-07-07 22:50:46 - Uspesno ubacivanje entiteta [Zaposleni{id=1, ime=Ivan, prezime=Ivanovic, email=ivanivanovic@gmail.com, salt=/5cWhayoD/NPYREf09PAhQ==}]
+[INFO] 2025-07-07 22:50:46 -   ************** LOG BROKERA **************
+
+Nije uspesno zapamcen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`vozac`, CONSTRAINT `vozac_ibfk_1` FOREIGN KEY (`idDozvola`) REFERENCES `dozvola` (`id`) ON UPDATE CASCADE)
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:46 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravnog zaposlenog je uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test11_KreirajNoviZaposleniNullSifra" classname="slojbaze.KreirajNoviTest" time="0.007">
+    <system-out><![CDATA[Ubacivanje neispravnog zaposlenog - null sifra
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Zaposleni{id=null, ime=Ivan, prezime=Ivanovic, email=ivanivanovic@gmail.com, salt=o7dW+WGGWVOyjEi2pmzG9A==}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zaposlenog nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test12_KreirajNoviZaposleniNullSalt" classname="slojbaze.KreirajNoviTest" time="0.07">
+    <system-out><![CDATA[Ubacivanje neispravnog zaposlenog - null salt
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Zaposleni{id=null, ime=Ivan, prezime=Ivanovic, email=ivanivanovic@gmail.com, salt=null}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zaposlenog nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test13_KreirajNoviZaposleniNullIme" classname="slojbaze.KreirajNoviTest" time="0.066">
+    <system-out><![CDATA[Ubacivanje neispravnog zaposlenog - null ime
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Zaposleni{id=null, ime=Ivanovic, prezime=ivanivanovic@gmail.com, email=2UYB997oOJCluZ+Iohmmwv9ErCkyUpPIUzQx3q6My8o=, salt=null}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zaposlenog nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test14_KreirajNoviZaposleniNullPrezime" classname="slojbaze.KreirajNoviTest" time="0.025">
+    <system-out><![CDATA[Ubacivanje neispravnog zaposlenog - null prezime
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Zaposleni{id=null, ime=Ivan, prezime=null, email=ivanivanovic@gmail.com, salt=navXfUPtvYSyBdbkP257ow==}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zaposlenog nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test15_KreirajNoviZaposleniNullEmail" classname="slojbaze.KreirajNoviTest" time="0.023">
+    <system-out><![CDATA[Ubacivanje neispravnog zaposlenog - null preziime
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Zaposleni{id=null, ime=Ivan, prezime=Ivanovic, email=null, salt=nvbzaaxJfV06pVHeQw28yw==}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zaposlenog nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test16_KreirajNoviZaposleniLosEmail" classname="slojbaze.KreirajNoviTest" time="0.025">
+    <system-out><![CDATA[Ubacivanje neispravnog zaposlenog - neispravan email
+[ERROR] 2025-07-07 22:50:46 - Greska pri ubacivanju entiteta Zaposleni{id=null, ime=Ivan, prezime=Ivanovic, email=efnsjefj, salt=XTT+gMATfIhs2LMF5fnrrw==}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zaposlenog nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test17_KreirajNoviIznajmljivanje" classname="slojbaze.KreirajNoviTest" time="0.102">
+    <system-out><![CDATA[Ubacivanje ispravnog iznajmljivanja
+[INFO] 2025-07-07 22:50:46 - Uspesno ubacivanje entiteta [Iznajmljivanje{id=1, datumSklapanja=2025-07-07, ukupanIznos=9999.0, zaposleni=Zaposleni{id=1, ime=null, prezime=null, email=null, salt=null}, vozac=Vozac{id=1, ime=null, prezime=null, email=null, dozvola=null}, stavke=null}]
+[INFO] 2025-07-07 22:50:46 -   ************** LOG BROKERA **************
+
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:46 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravnog iznajmljivanja je uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test18_KreirajNoviIznajmljivanjeLosSpoljnjikljucZaposleni" classname="slojbaze.KreirajNoviTest" time="0.064">
+    <system-out><![CDATA[Ubacivanje neispravnog iznajmljivanja - nevalidan spoljnji kljuc ka zaposlenom
+Ubacivanje neispravnog iznajmljivanja nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test19_KreirajNoviIznajmljivanjeLosSpoljnjikljucVozac" classname="slojbaze.KreirajNoviTest" time="0.266">
+    <system-out><![CDATA[Ubacivanje neispravnog iznajmljivanja - nevalidan spoljnji kljuc ka vozacu
+Ubacivanje neispravnog iznajmljivanja nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test20_KreirajNoviIznajmljivanjeNullDatum" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog iznajmljivanja - null datum
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta Iznajmljivanje{id=null, datumSklapanja=null, ukupanIznos=9999.0, zaposleni=Zaposleni{id=1, ime=null, prezime=null, email=null, salt=null}, vozac=Vozac{id=1, ime=null, prezime=null, email=null, dozvola=null}, stavke=null}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog iznajmljivanja nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test21_KreirajNoviVozilo" classname="slojbaze.KreirajNoviTest" time="0.071">
+    <system-out><![CDATA[Ubacivanje ispravnog vozila
+[INFO] 2025-07-07 22:50:47 - Uspesno ubacivanje entiteta [Mercedes S Klasa (id = 1)]
+[INFO] 2025-07-07 22:50:47 -   ************** LOG BROKERA **************
+
+Nije uspesno zapamcen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`iznajmljivanje`, CONSTRAINT `iznajmljivanje_ibfk_2` FOREIGN KEY (`idVozac`) REFERENCES `vozac` (`id`) ON UPDATE CASCADE)
+Nije uspesno zapamcen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`iznajmljivanje`, CONSTRAINT `iznajmljivanje_ibfk_1` FOREIGN KEY (`idZaposleni`) REFERENCES `zaposleni` (`id`) ON UPDATE CASCADE)
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:47 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravnog vozila je uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test22_KreirajNoviVoziloNullKlasa" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog vozila - null klasa
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta Mercedes S Klasa (id = null): nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozila nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test23_KreirajNoviVoziloNullProizvodjac" classname="slojbaze.KreirajNoviTest" time="0.002">
+    <system-out><![CDATA[Ubacivanje neispravnog vozila - null proizvodjac
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta null S Klasa (id = null): nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozila nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test24_KreirajNoviVoziloNeispravnaCena" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog vozila - neispravna kupovna cena
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta Mercedes S Klasa (id = null): nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozila nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test25_KreirajNoviVoziloNeispravnoGodiste" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog vozila - neispravno godiste(stariji od 2006)
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta Mercedes S Klasa (id = null): nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozila nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test26_KreirajNoviVoziloNullImeModela" classname="slojbaze.KreirajNoviTest" time="0.068">
+    <system-out><![CDATA[Ubacivanje neispravnog vozila - null ime modela
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta Audi null (id = null): nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozila nije uspelo.
+---------------------------------------------------------------------------------
+[INFO] 2025-07-07 22:50:47 - Uspesno ubacivanje entiteta [Audi stagod (id = 2)]
+[INFO] 2025-07-07 22:50:47 -   ************** LOG BROKERA **************
+
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:47 - ************** KRAJ LOGA BROKERA **************
+]]></system-out>
+  </testcase>
+  <testcase name="test27_KreirajNoviVoziloNullEnum" classname="slojbaze.KreirajNoviTest" time="0.002">
+    <system-out><![CDATA[Ubacivanje neispravnog vozila - null kategorija
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta Mercedes S Klasa (id = null): nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozila nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test28_KreirajNoviVoziloNeispravnaKlasa" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog vozila - neispravna klasa
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta Mercedes S Klasa (id = null): nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozila nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test29_KreirajNoviVoziloNeispravanProizvodjac" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog vozila - neispravan proizvodjac
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta Jugo S Klasa (id = null): nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozila nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test30_KreirajNoviVoziloDaciaMotor" classname="slojbaze.KreirajNoviTest" time="0.002">
+    <system-out><![CDATA[Ubacivanje neispravnog vozila - motor dacia
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta Dacia S Klasa (id = null): nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog vozila nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test31_KreirajNoviStavkaIznajmljivanja" classname="slojbaze.KreirajNoviTest" time="0.114">
+    <system-out><![CDATA[Ubacivanje ispravne stavke iznajmljivanja
+[INFO] 2025-07-07 22:50:47 - Uspesno ubacivanje entiteta [StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=1, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=2025-07-07, datumZavrsetka=2025-07-22, iznos=999.0, vozilo=null null (id = 1)}]
+[INFO] 2025-07-07 22:50:47 -   ************** LOG BROKERA **************
+
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:47 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravne stavke iznajmljivanja je uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test32_KreirajNoviStavkaIznajmljivanjaLosSpoljnjiKljuc" classname="slojbaze.KreirajNoviTest" time="0.008">
+    <system-out><![CDATA[Ubacivanje neispravne stavke iznajmljivanja - nevalidan spoljnji kljuc
+Ubacivanje neispravne stavke iznajmljivanja nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test33_KreirajNoviStavkaIznajmljivanjaPremaloDana" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravne stavke iznajmljivanja - premalo dana
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=1, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=2025-07-07, datumZavrsetka=2025-07-09, iznos=999.0, vozilo=null null (id = 1)}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravne stavke iznajmljivanja nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test34_KreirajNoviStavkaIznajmljivanjaPreviseDana" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravne stavke iznajmljivanja - previse dana
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=1, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=2025-07-07, datumZavrsetka=2025-09-07, iznos=999.0, vozilo=null null (id = 1)}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravne stavke iznajmljivanja nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test35_KreirajNoviStavkaIznajmljivanjaLosIznos" classname="slojbaze.KreirajNoviTest" time="0.002">
+    <system-out><![CDATA[Ubacivanje neispravne stavke iznajmljivanja - los iznos
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=1, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=2025-07-07, datumZavrsetka=2025-07-22, iznos=-999.0, vozilo=null null (id = 1)}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravne stavke iznajmljivanja nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test36_KreirajNoviStavkaIznajmljivanjaNullDatumPocetak" classname="slojbaze.KreirajNoviTest" time="0.007">
+    <system-out><![CDATA[Ubacivanje neispravne stavke iznajmljivanja - null datum pocetka
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=1, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=null, datumZavrsetka=2025-07-22, iznos=-999.0, vozilo=null null (id = 1)}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravne stavke iznajmljivanja nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test37_KreirajNoviStavkaIznajmljivanjaNullDatumZavrsetak" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravne stavke iznajmljivanja - null datum zavrsetka
+[ERROR] 2025-07-07 22:50:47 - Greska pri ubacivanju entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=1, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=2025-07-07, datumZavrsetka=null, iznos=-999.0, vozilo=null null (id = 1)}: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravne stavke iznajmljivanja nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test38_KreirajNoviTerminDezurstva" classname="slojbaze.KreirajNoviTest" time="0.076">
+    <system-out><![CDATA[Ubacivanje ispravnog termina dezurstva
+[INFO] 2025-07-07 22:50:47 - Uspesno ubacivanje entiteta [TerminDezurstva{id=1, napomena=moja napomena, smene=null, tipTermina=PREPODNE}]
+[INFO] 2025-07-07 22:50:47 -   ************** LOG BROKERA **************
+
+Nije uspesno zapamcen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`stavkaiznajmljivanja`, CONSTRAINT `stavkaiznajmljivanja_ibfk_1` FOREIGN KEY (`idIznajmljivanje`) REFERENCES `iznajmljivanje` (`id`) ON DELETE CASCADE ON UPD)
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:47 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravnog termina dezurstva je uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test39_KreirajNoviTerminDezurstvaBezNapomene" classname="slojbaze.KreirajNoviTest" time="0.075">
+    <system-out><![CDATA[Ubacivanje ispravnog termina dezurstva - bez napomene
+[INFO] 2025-07-07 22:50:47 - Uspesno ubacivanje entiteta [TerminDezurstva{id=2, napomena=null, smene=null, tipTermina=POPODNE}]
+[INFO] 2025-07-07 22:50:47 -   ************** LOG BROKERA **************
+
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:47 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravnog termina dezurstva je uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test40_KreirajNoviZapTer" classname="slojbaze.KreirajNoviTest" time="0.14">
+    <system-out><![CDATA[Ubacivanje ispravnog zapter
+[INFO] 2025-07-07 22:50:47 - Uspesno ubacivanje entiteta [iznajmljivanjeapp.domain.Smena@16612a51]
+[INFO] 2025-07-07 22:50:47 -   ************** LOG BROKERA **************
+
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:47 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravnog termina dezurstva je uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test41_KreirajNoviZapTerLosSpoljnjiKljucZaposleni" classname="slojbaze.KreirajNoviTest" time="0.038">
+    <system-out><![CDATA[Ubacivanje neispravnog zapter - nevalidan spoljnji kljuc ka zaposlenom
+Ubacivanje neispravnog zapter nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test42_KreirajNoviZapTerLosSpoljnjiKljucTerminDezurstva" classname="slojbaze.KreirajNoviTest" time="0.451">
+    <system-out><![CDATA[Ubacivanje neispravnog zapter - nevalidan spoljnji kljuc ka terminu dezurstva
+Ubacivanje neispravnog zapter nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test43_KreirajNoviZapTerVanredniBezBonusa" classname="slojbaze.KreirajNoviTest" time="0.002">
+    <system-out><![CDATA[Ubacivanje neispravnog zapter - vanredan bez bonusa
+[ERROR] 2025-07-07 22:50:48 - Greska pri ubacivanju entiteta iznajmljivanjeapp.domain.Smena@54e041a4: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zapter nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test44_KreirajNoviZapTerNevanredniSaBonusom" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog zapter - nevanredan sa bonusom
+[ERROR] 2025-07-07 22:50:48 - Greska pri ubacivanju entiteta iznajmljivanjeapp.domain.Smena@2c78324b: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zapter nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test45_KreirajNoviZapTerMaliSati" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog zapter - premali broj sati
+[ERROR] 2025-07-07 22:50:48 - Greska pri ubacivanju entiteta iznajmljivanjeapp.domain.Smena@79defdc: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zapter nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test46_KreirajNoviZapTerVelikiSati" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog zapter - preveliki broj sati
+[ERROR] 2025-07-07 22:50:48 - Greska pri ubacivanju entiteta iznajmljivanjeapp.domain.Smena@18317edc: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog zapter nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test47_KreirajNoviZapTerNullDatum" classname="slojbaze.KreirajNoviTest" time="0.0">
+    <system-out><![CDATA[Ubacivanje neispravnog zapter - null datum
+Ubacivanje neispravnog zapter nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test48_KreirajNoviZapTerVanredniBonus" classname="slojbaze.KreirajNoviTest" time="0.056">
+    <system-out><![CDATA[Ubacivanje ispravnog zapter - vanredni sa korektnim bonusom
+[INFO] 2025-07-07 22:50:48 - Uspesno ubacivanje entiteta [iznajmljivanjeapp.domain.Smena@4b86805d]
+[INFO] 2025-07-07 22:50:48 -   ************** LOG BROKERA **************
+
+Nije uspesno zapamcen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`zapter`, CONSTRAINT `zapter_ibfk_1` FOREIGN KEY (`idZaposleni`) REFERENCES `zaposleni` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Nije uspesno zapamcen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`zapter`, CONSTRAINT `zapter_ibfk_2` FOREIGN KEY (`idTerminDezurstva`) REFERENCES `termindezurstva` (`id`) ON UPDATE CASCADE)
+Nije uspesno zapamcen slog u bazi. java.sql.SQLException: Field 'datum' doesn't have a default value
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:48 - ************** KRAJ LOGA BROKERA **************
+Ubacivanje ispravnog termina dezurstva je uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test49_KreirajNoviZapTerVanredniLosBonus" classname="slojbaze.KreirajNoviTest" time="0.001">
+    <system-out><![CDATA[Ubacivanje neispravnog zapter - vanredni sa premalim bonusom
+[ERROR] 2025-07-07 22:50:48 - Greska pri ubacivanju entiteta iznajmljivanjeapp.domain.Smena@5852c06f: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog termina dezurstva nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test50_KreirajNoviZapTerVanredniLosBonus" classname="slojbaze.KreirajNoviTest" time="0.002">
+    <system-out><![CDATA[Ubacivanje neispravnog zapter - vanredni sa prevelikim bonusom
+[ERROR] 2025-07-07 22:50:48 - Greska pri ubacivanju entiteta iznajmljivanjeapp.domain.Smena@4149c063: nezadovoljena vrednosna ogranicenja
+Ubacivanje neispravnog termina dezurstva nije uspelo.
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+</testsuite>

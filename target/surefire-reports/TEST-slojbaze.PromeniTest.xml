@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="slojbaze.PromeniTest" time="2.419" tests="49" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\test-classes;C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\classes;C:\Users\Djurkovic\.m2\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Users\Djurkovic\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Djurkovic\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\Djurkovic\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;C:\Users\Djurkovic\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Djurkovic\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Djurkovic\.m2\repository\org\reflections\reflections\0.10.2\reflections-0.10.2.jar;C:\Users\Djurkovic\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar;C:\Users\Djurkovic\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\Djurkovic\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Budapest"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\Djurkovic\AppData\Local\Temp\surefire1895608306264817275\surefirebooter-20250707225040019_3.jar C:\Users\Djurkovic\AppData\Local\Temp\surefire1895608306264817275 2025-07-07T22-50-39_776-jvmRun1 surefire-20250707225040019_1tmp surefire_0-20250707225040019_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\test-classes;C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\classes;C:\Users\Djurkovic\.m2\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Users\Djurkovic\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Djurkovic\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\Djurkovic\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;C:\Users\Djurkovic\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Djurkovic\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Djurkovic\.m2\repository\org\reflections\reflections\0.10.2\reflections-0.10.2.jar;C:\Users\Djurkovic\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar;C:\Users\Djurkovic\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\Djurkovic\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Djurkovic"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Djurkovic\AppData\Local\Temp\surefire1895608306264817275\surefirebooter-20250707225040019_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.1+11-39"/>
+    <property name="user.name" value="Djurkovic"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Djurkovic\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DJURKO~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.2.3"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Lua;C:\Program Files\nodejs\;C:\mingw64\bin;C:\Program Files\Microsoft Network Monitor 3\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-15.0.1\bin;C:\Program Files\Git\cmd;C:\Program Files\MATLAB\R2024b\bin;C:\Program Files\Calibre2\;C:\Program Files\PuTTY\;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python310\;C:\Users\Djurkovic\scoop\shims;C:\Ruby27-x64\bin;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python39\;C:\Users\Djurkovic\AppData\Local\Microsoft\WindowsApps;C:\Users\Djurkovic\AppData\Local\Microsoft\WindowsApps;C:\Users\Djurkovic\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Djurkovic\AppData\Local\Programs\Python;C:\ffmpeg\bin;C:\Users\Djurkovic\AppData\Local\atom\bin;C:\Users\Djurkovic\AppData\Roaming\npm;C:\Users\Djurkovic\miniconda3\Library\bin;C:\Users\Djurkovic\miniconda3\Scripts;C:\Users\Djurkovic\miniconda3\condabin;C:\Users\Djurkovic\.dotnet\tools;C:\Users\Djurkovic\AppData\Local\Pandoc\;C:\Users\Djurkovic\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\JetBrains\CLion 2024.2.1\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.1+11-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="test01_PromeniZaposleniCascades" classname="slojbaze.PromeniTest" time="0.105">
+    <system-out><![CDATA[Provera da li spoljni kljucevi iznajmljivanja i zapter "kaskadiraju" svoje vrednosti nakon promene vrednosti kljuca zaposlenog
+[INFO] 2025-07-07 22:50:51 - Uspesna promena entiteta Zaposleni{id=888, ime=null, prezime=null, email=null, salt=null}
+[INFO] 2025-07-07 22:50:51 -   ************** LOG BROKERA **************
+null
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:51 - ************** KRAJ LOGA BROKERA **************
+Spoljni kljucevi idZaposleni od zapter i iznajmljivanje su promenili vrednosti jer imaju CASCADE
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test02_PromeniVoziloCascades" classname="slojbaze.PromeniTest" time="0.115">
+    <system-out><![CDATA[Provera da li spoljni kljucevi stavke iznajmljivanja "kaskadiraju" svoje vrednosti nakon promene vrednosti kljuca vozila
+[INFO] 2025-07-07 22:50:51 - Uspesna promena entiteta null null (id = 888)
+[INFO] 2025-07-07 22:50:51 -   ************** LOG BROKERA **************
+
+Slog postoji u bazi.
+Slog postoji u bazi.
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:51 - ************** KRAJ LOGA BROKERA **************
+Spoljni kljuc idVozilo od stavke iznajmljivanja je promenio vrednosti jer ima CASCADE
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test03_PromeniDozvolaCascades" classname="slojbaze.PromeniTest" time="0.092">
+    <system-out><![CDATA[Provera da li spoljni kljucevi vozaca "kaskadiraju" svoje vrednosti nakon promene vrednosti kljuca dozvole
+[INFO] 2025-07-07 22:50:51 - Uspesna promena entiteta Dozvola{id=888, kategorija=null}
+[INFO] 2025-07-07 22:50:51 -   ************** LOG BROKERA **************
+
+Slog postoji u bazi.
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:51 - ************** KRAJ LOGA BROKERA **************
+Spoljni kljuc idDozvola od vozaca je promenio vrednosti jer ima CASCADE
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test04_PromeniTermindezurstvaCascades" classname="slojbaze.PromeniTest" time="0.109">
+    <system-out><![CDATA[Provera da li spoljni kljucevi zapter "kaskadiraju" svoje vrednosti nakon promene vrednosti kljuca termina dezurstva
+[INFO] 2025-07-07 22:50:51 - Uspesna promena entiteta TerminDezurstva{id=888, napomena=null, smene=null, tipTermina=null}
+[INFO] 2025-07-07 22:50:51 -   ************** LOG BROKERA **************
+
+Slog postoji u bazi.
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:51 - ************** KRAJ LOGA BROKERA **************
+Spoljni kljuc idTerminDezustva od zapter je promenio vrednosti jer ima CASCADE
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test05_PromeniVozacCascades" classname="slojbaze.PromeniTest" time="0.128">
+    <system-out><![CDATA[Provera da li spoljni kljuce idVozac od iznajmljivanja "kaskadira" nakon promene vrednosti kljuca vozaca
+[INFO] 2025-07-07 22:50:51 - Uspesna promena entiteta Vozac{id=888, ime=null, prezime=null, email=null, dozvola=null}
+[INFO] 2025-07-07 22:50:51 -   ************** LOG BROKERA **************
+
+Slog postoji u bazi.
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:51 - ************** KRAJ LOGA BROKERA **************
+Spoljni kljuc idVozac od iznajmljivanja je promenio vrednosti jer ima CASCADE
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test06_PromeniVozacRestricted" classname="slojbaze.PromeniTest" time="0.066">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene spoljnog kljuca vozaca idDozvola na nepostojecu dozvolu
+Spoljni kljuc idDozvola od vozaca nije promenjen jer specifira nevalidnu dozvolu
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test07_PromeniIznajmljivanjeCascades" classname="slojbaze.PromeniTest" time="0.11">
+    <system-out><![CDATA[Provera da li spoljni kljuce idIznajmljivanje od stavke iznajmljivanja "kaskadira" nakon promene vrednosti kljuca iznajmljivanja
+[INFO] 2025-07-07 22:50:51 - Uspesna promena entiteta Iznajmljivanje{id=888, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}
+[INFO] 2025-07-07 22:50:51 -   ************** LOG BROKERA **************
+
+Slog postoji u bazi.
+Nije uspesno promenjen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`vozac`, CONSTRAINT `vozac_ibfk_1` FOREIGN KEY (`idDozvola`) REFERENCES `dozvola` (`id`) ON UPDATE CASCADE)
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:51 - ************** KRAJ LOGA BROKERA **************
+Spoljni kljuc idIznajmljivanje od stavke iznajmljivanja je promenio vrednosti jer ima CASCADE
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test08_PromeniIznajmljivanjeRestrictedVozac" classname="slojbaze.PromeniTest" time="0.147">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene spoljnog kljuca iznajmljivanja idVozac na nepostojeceg vozaca
+Spoljni kljuc idVozac od iznajmljivanja nije promenjen jer specifira nevalidnog vozaca
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test09_PromeniIznajmljivanjeRestrictedZaposleni" classname="slojbaze.PromeniTest" time="0.033">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene spoljnog kljuca iznajmljivanja idZaposleni na nepostojeceg zaposlenog
+Spoljni kljuc idZaposleni od iznajmljivanja nije promenjen jer specifira nevalidnog zaposlenog
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test10_PromeniStavkaIznajmljivanjaRestrictedVozilo" classname="slojbaze.PromeniTest" time="0.085">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene spoljnog kljuca stavke iznajmljivanja idVozilo na nepostojece vozilo
+Spoljni kljuc idVozilo od stavke iznajmljivanja nije promenjen jer specifira nevalidno vozilo
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test11_PromeniStavkaIznajmljivanjaRestrictedIznajmljivanje" classname="slojbaze.PromeniTest" time="0.003">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene spoljnog kljuca stavke iznajmljivanja idIznajmljivanje na nepostojece iznajmljivanje
+Spoljni kljuc idIznajmljivanje od stavke iznajmljivanja nije promenjen jer specifira nevalidno iznajmljivanje
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test12_PromeniZapTerRestrictedZaposleni" classname="slojbaze.PromeniTest" time="0.004">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene spoljnog kljuca od zapter idZaposleni na nepostojeceh zaposlenog
+Spoljni kljuc idZaposleni od zapter nije promenjen jer specifira nevalidnog zaposlenog
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test13_PromeniZapTerRestrictedTerminDezurstva" classname="slojbaze.PromeniTest" time="0.003">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene spoljnog kljuca od zapter idTerminDezurstva na nepostojeci termin dezurstva
+Spoljni kljuc idTerminDezurstva od zapter nije promenjen jer specifira nevalidnan termin dezurstva
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test14_PromeniDozvolaVrednosnaOgranicenja" classname="slojbaze.PromeniTest" time="0.001">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene dozvole koji krsi vrednosna ogranicenja - losa kategorija
+[ERROR] 2025-07-07 22:50:51 - Greska pri promeni entiteta Dozvola{id=888, kategorija=X}: nezadovoljena vrednosna ogranicenja
+[INFO] 2025-07-07 22:50:51 -   ************** LOG BROKERA **************
+
+Slog postoji u bazi.
+Nije uspesno promenjen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`iznajmljivanje`, CONSTRAINT `iznajmljivanje_ibfk_2` FOREIGN KEY (`idVozac`) REFERENCES `vozac` (`id`) ON UPDATE CASCADE)
+Nije uspesno promenjen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`iznajmljivanje`, CONSTRAINT `iznajmljivanje_ibfk_1` FOREIGN KEY (`idZaposleni`) REFERENCES `zaposleni` (`id`) ON UPDATE CASCADE)
+Nije uspesno promenjen slog u bazi. java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`projektovanjesoftvera_seminarski`.`stavkaiznajmljivanja`, CONSTRAINT `stavkaiznajmljivanja_ibfk_2` FOREIGN KEY (`idVozilo`) REFERENCES `vozilo` (`id`) ON UPDATE CASCADE)
+Nije uspesno promenjen slog u bazi. java.sql.SQLException: Illegal parameter data types int and row for operation '='
+Nije uspesno promenjen slog u bazi. java.sql.SQLException: Illegal parameter data types int and row for operation '='
+Nije uspesno promenjen slog u bazi. java.sql.SQLException: Illegal parameter data types int and row for operation '='
+
+[INFO] 2025-07-07 22:50:51 - ************** KRAJ LOGA BROKERA **************
+Kategorija dozvole nije promenjena jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test15_PromeniIznajmljivanjeVrednosnaOgranicenja" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene iznajmljivanja koji krsi vrednosna ogranicenja - los iznos
+[ERROR] 2025-07-07 22:50:51 - Greska pri promeni entiteta Iznajmljivanje{id=888, datumSklapanja=null, ukupanIznos=-666.0, zaposleni=null, vozac=null, stavke=null}: nezadovoljena vrednosna ogranicenja
+Ukupan iznos iznajmljivanja nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test16_PromeniVozacVrednosnaOgranicenja" classname="slojbaze.PromeniTest" time="0.005">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene vozaca koji krsi vrednosna ogranicenja - los email
+[ERROR] 2025-07-07 22:50:51 - Greska pri promeni entiteta Vozac{id=888, ime=null, prezime=null, email=efgsbhsef, dozvola=null}: nezadovoljena vrednosna ogranicenja
+Email vozaca nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test17_PromeniZaposleniVrednosnaOgranicenja" classname="slojbaze.PromeniTest" time="0.003">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zaposlenog koji krsi vrednosna ogranicenja - los email
+[ERROR] 2025-07-07 22:50:51 - Greska pri promeni entiteta Zaposleni{id=888, ime=null, prezime=null, email=gtgnkngjk, salt=null}: nezadovoljena vrednosna ogranicenja
+Email zaposlenog nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test18_PromeniStavkaIznajmljivanjaVrednosnaOgranicenjaDatumPocetka" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene stavke iznajmljivanja koji krsi vrednosna ogranicenja - los datum pocetka
+[ERROR] 2025-07-07 22:50:51 - Greska pri promeni entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=888, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=2025-04-23, datumZavrsetka=null, iznos=null, vozilo=null}: nezadovoljena vrednosna ogranicenja
+Stavka iznajmljivanja nuje promenjena jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test19_PromeniStavkaIznajmljivanjaDatumPocetka" classname="slojbaze.PromeniTest" time="0.093">
+    <system-out><![CDATA[AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Provera da li ce biti prekinut pokusaj promene stavke iznajmljivanja koji ne krsi vrednosna ogranicenja - korektan datum pocetka
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=888, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=2025-07-10, datumZavrsetka=null, iznos=null, vozilo=null}
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Stavka iznajmljivanja je promenjena jer zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test20_PromeniStavkaIznajmljivanjaVrednosnaOgranicenjaDatumPocetka" classname="slojbaze.PromeniTest" time="0.003">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene stavke iznajmljivanja koji krsi vrednosna ogranicenja - los datum zavrsetka
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=888, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=null, datumZavrsetka=2025-09-20, iznos=null, vozilo=null}: nezadovoljena vrednosna ogranicenja
+Stavka iznajmljivanja nuje promenjena jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test21_PromeniStavkaIznajmljivanjaDatumPocetka" classname="slojbaze.PromeniTest" time="0.081">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene stavke iznajmljivanja koji ne krsi vrednosna ogranicenja - korektan datum zavrsetka
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=888, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=null, datumZavrsetka=2025-07-27, iznos=null, vozilo=null}
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Stavka iznajmljivanja je promenjena jer zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test22_PromeniVoziloVrednosnaOgranicenjaProizvodjac" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene vozila koji krsi vrednosna ogranicenja - los proizvodjac
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta Jugo null (id = 888): nezadovoljena vrednosna ogranicenja
+Vozilo nije promenjeno jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test23_PromeniVoziloVrednosnaOgranicenjaKlasa" classname="slojbaze.PromeniTest" time="0.001">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene vozila koji krsi vrednosna ogranicenja - losa klasa
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta null null (id = 888): nezadovoljena vrednosna ogranicenja
+Vozilo nije promenjeno jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test24_PromeniVoziloVrednosnaOgranicenjaKupovnaCena" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene vozila koji krsi vrednosna ogranicenja - losa kupovna cena
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta null null (id = 888): nezadovoljena vrednosna ogranicenja
+Vozilo nije promenjeno jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test25_PromeniVoziloVrednosnaOgranicenjaGodiste" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene vozila koji krsi vrednosna ogranicenja - prestaro godiste
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta null null (id = 888): nezadovoljena vrednosna ogranicenja
+Vozilo nije promenjeno jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test26_PromeniVoziloVrednosnaOgranicenjaGodiste" classname="slojbaze.PromeniTest" time="0.001">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene vozila koji krsi vrednosna ogranicenja - godiste u buducnosti
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta null null (id = 888): nezadovoljena vrednosna ogranicenja
+Vozilo nije promenjeno jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test27_PromeniVoziloVrednosnaOgranicenjaMotorDacia" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene vozila koji krsi vrednosna ogranicenja - promena proizvodjaca na daciu kod motora
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta Dacia null (id = 2): nezadovoljena vrednosna ogranicenja
+Vozilo nije promenjeno jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test28_PromeniVoziloVrednosnaOgranicenjaMotorDacia" classname="slojbaze.PromeniTest" time="0.055">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene vozila koji krsi vrednosna ogranicenja - promena klase na motor kod dacia
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta Dacia null (id = 888)
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta null null (id = 888): nezadovoljena vrednosna ogranicenja
+Vozilo nije promenjeno jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test29_PromeniZapTerVrednosnaOgranicenjaVanredan" classname="slojbaze.PromeniTest" time="0.004">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - stavljanje da nije vanredan neko ko ima fiksni bonus
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@27912e3: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test30_PromeniZapTerVrednosnaOgranicenjaVanredanFiksniBonus" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - stavljanje da nije vanredan neko ko ima fiksni bonus (eksplicitno menjamo i fiksniBonus)
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@43015c69: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test31_PromeniZapTerVrednosnaOgranicenjaVanredanFiksniBonusBrojSati" classname="slojbaze.PromeniTest" time="0.001">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - stavljanje da nije vanredan neko ko ima fiksni bonus (eksplicitno menjamo i fiksniBonus i brojSati)
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@19b89d4: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test32_PromeniZapTerVrednosnaOgranicenjaVanredanBrojSati" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - stavljanje da nije vanredan neko ko ima fiksni bonus (eksplicitno menjamo i brojSati)
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@30b6ffe0: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test33_PromeniZapTerVrednosnaOgranicenjaBrojSatiPremali" classname="slojbaze.PromeniTest" time="0.003">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - premali broj sati
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@2415fc55: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test34_PromeniZapTerVrednosnaOgranicenjaBrojSati" classname="slojbaze.PromeniTest" time="0.003">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - prevelik broj sati
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@13bc8645: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test35_PromeniZapTerVrednosnaOgranicenjaFiksniBonus" classname="slojbaze.PromeniTest" time="0.003">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - prevelik fiksni bonus
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@93081b6: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test36_PromeniZapTerVrednosnaOgranicenjaFiksniBonusPremali" classname="slojbaze.PromeniTest" time="0.003">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - premali fiksni bonus
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@7ba8c737: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test37_PromeniZapTerVrednosnaOgranicenjaFiksniBonusKrsi" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - normalan fiksni bonus nekome ko nije vanredan
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@15a04efb: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test38_PromeniZapTerVrednosnaOgranicenjaFiksniBonusKorektno" classname="slojbaze.PromeniTest" time="0.047">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji ne krsi vrednosna ogranicenja - korektna promena bonusa
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta iznajmljivanjeapp.domain.Smena@31edaa7d
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Zapter je promenjen jer zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test39_PromeniZapTerVrednosnaOgranicenjaFiksniBonusVanredanPrevelikBonus" classname="slojbaze.PromeniTest" time="0.002">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji krsi vrednosna ogranicenja - pokusaj menjanja u vanredno i dodavanje nekorektnog bonusa
+[ERROR] 2025-07-07 22:50:52 - Greska pri promeni entiteta iznajmljivanjeapp.domain.Smena@3336e6b6: nezadovoljena vrednosna ogranicenja
+Zapter nije promenjen jer ne zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test40_PromeniZapTerVrednosnaOgranicenjaFiksniBonusVanredanKorektno" classname="slojbaze.PromeniTest" time="0.046">
+    <system-out><![CDATA[Provera da li ce biti prekinut pokusaj promene zapter koji ne krsi vrednosna ogranicenja - korektno menjanje u vanredno i dodavanje bonusa
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta iznajmljivanjeapp.domain.Smena@2663e964
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Zapter je promenjen jer zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test41_PromeniDozvolaNormalno" classname="slojbaze.PromeniTest" time="0.023">
+    <system-out><![CDATA[Provera da li ce dozvola biti normalno promenjena
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta Dozvola{id=888, kategorija=A}
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Dozvola je korektno promenjena i zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test42_PromeniIznajmljivanjeNormalno" classname="slojbaze.PromeniTest" time="0.032">
+    <system-out><![CDATA[Provera da li ce iznajmljivanje biti normalno promenjeno
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta Iznajmljivanje{id=888, datumSklapanja=2025-07-07, ukupanIznos=1337.0, zaposleni=Zaposleni{id=888, ime=null, prezime=null, email=null, salt=null}, vozac=Vozac{id=888, ime=null, prezime=null, email=null, dozvola=null}, stavke=null}
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Iznajmljivanje je korektno promenjeno i zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test43_PromeniStavkaIznajmljivanjeNormalno" classname="slojbaze.PromeniTest" time="0.026">
+    <system-out><![CDATA[Provera da li ce stavka iznajmljivanja biti normalno promenjena
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta StavkaIznajmljivanja{iznajmljivanje=Iznajmljivanje{id=888, datumSklapanja=null, ukupanIznos=null, zaposleni=null, vozac=null, stavke=null}, rb=1, datumPocetka=2025-07-07, datumZavrsetka=2025-08-01, iznos=1357.0, vozilo=null null (id = 888)}
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Stavka iznajmljivanja je korektno promenjena i zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test44_PromeniTerminDezurstvaNormalno" classname="slojbaze.PromeniTest" time="0.032">
+    <system-out><![CDATA[Provera da li ce termin dezurstva biti normalno promenjen
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta TerminDezurstva{id=2, napomena=moja nova napomena, smene=null, tipTermina=NOC}
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Termin Dezurstva je korektno promenjen i zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test45_PromeniVozacNormalno" classname="slojbaze.PromeniTest" time="0.024">
+    <system-out><![CDATA[Provera da li ce vozac biti normalno promenjen
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta Vozac{id=888, ime=Srdjan, prezime=Srecmevic, email=novimail@gmail.com, dozvola=Dozvola{id=888, kategorija=null}}
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Vozac je korektno promenjen i zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test46_PromeniZaposleniNormalno" classname="slojbaze.PromeniTest" time="0.182">
+    <system-out><![CDATA[Provera da li ce zaposleni biti normalno promenjen
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta Zaposleni{id=888, ime=Sinisa, prezime=Vlajic, email=sinisav@fon.bg.ac.rs, salt=WQwq4w4AwBciW4LtgsXadQ==}
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Zaposleni je korektno promenjen i zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test47_PromeniVoziloNormalno" classname="slojbaze.PromeniTest" time="0.225">
+    <system-out><![CDATA[Provera da li ce vozilo biti normalno promenjeno
+[INFO] 2025-07-07 22:50:52 - Uspesna promena entiteta Fiat Multipla (id = 2)
+[INFO] 2025-07-07 22:50:52 -   ************** LOG BROKERA **************
+
+Uspesno promenjen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:52 - ************** KRAJ LOGA BROKERA **************
+Vozilo je korektno promenjeno i zadovoljava vrednosna ogranicenja
+---------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="test48" classname="slojbaze.PromeniTest" time="0.357">
+    <system-out><![CDATA[multi bacivanje test
+[INFO] 2025-07-07 22:50:53 - Uspesno ubacivanje entiteta [Vozac{id=889, ime=Petar, prezime=Bojovic, email=petboj@gmail.com, dozvola=Dozvola{id=888, kategorija=null}}, Vozac{id=890, ime=Momir, prezime=Segan, email=ms@gmail.com, dozvola=Dozvola{id=888, kategorija=null}}, Vozac{id=891, ime=Jovan, prezime=Andjelokovic, email=joan@gmail.com, dozvola=Dozvola{id=888, kategorija=null}}, Vozac{id=892, ime=Stevan, prezime=Mokranjac, email=stevmok@gmail.com, dozvola=Dozvola{id=888, kategorija=null}}]
+[INFO] 2025-07-07 22:50:53 -   ************** LOG BROKERA **************
+
+Uspesno zapamcen slog u bazi. 
+
+[INFO] 2025-07-07 22:50:53 - ************** KRAJ LOGA BROKERA **************
+ok
+]]></system-out>
+  </testcase>
+  <testcase name="test49" classname="slojbaze.PromeniTest" time="0.107">
+    <system-out><![CDATA[multi brisanje test
+[INFO] 2025-07-07 22:50:53 - Uspesno brisanje entiteta [Vozac{id=889, ime=Petar, prezime=Bojovic, email=petboj@gmail.com, dozvola=Dozvola{id=888, kategorija=null}}, Vozac{id=890, ime=Momir, prezime=Segan, email=ms@gmail.com, dozvola=Dozvola{id=888, kategorija=null}}, Vozac{id=891, ime=Jovan, prezime=Andjelokovic, email=joan@gmail.com, dozvola=Dozvola{id=888, kategorija=null}}, Vozac{id=892, ime=Stevan, prezime=Mokranjac, email=stevmok@gmail.com, dozvola=Dozvola{id=888, kategorija=null}}]
+[INFO] 2025-07-07 22:50:53 -   ************** LOG BROKERA **************
+
+Uspesno obrisan slog u bazi. 
+
+[INFO] 2025-07-07 22:50:53 - ************** KRAJ LOGA BROKERA **************
+ok
+]]></system-out>
+  </testcase>
+</testsuite>

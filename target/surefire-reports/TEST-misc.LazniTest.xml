@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="misc.LazniTest" time="0.744" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\test-classes;C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\classes;C:\Users\Djurkovic\.m2\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Users\Djurkovic\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Djurkovic\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\Djurkovic\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;C:\Users\Djurkovic\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Djurkovic\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Djurkovic\.m2\repository\org\reflections\reflections\0.10.2\reflections-0.10.2.jar;C:\Users\Djurkovic\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar;C:\Users\Djurkovic\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\Djurkovic\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Budapest"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\Djurkovic\AppData\Local\Temp\surefire1895608306264817275\surefirebooter-20250707225040019_3.jar C:\Users\Djurkovic\AppData\Local\Temp\surefire1895608306264817275 2025-07-07T22-50-39_776-jvmRun1 surefire-20250707225040019_1tmp surefire_0-20250707225040019_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\test-classes;C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\target\classes;C:\Users\Djurkovic\.m2\repository\com\zaxxer\HikariCP\6.3.0\HikariCP-6.3.0.jar;C:\Users\Djurkovic\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Djurkovic\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\Djurkovic\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;C:\Users\Djurkovic\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Djurkovic\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Djurkovic\.m2\repository\org\reflections\reflections\0.10.2\reflections-0.10.2.jar;C:\Users\Djurkovic\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar;C:\Users\Djurkovic\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\Djurkovic\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\Djurkovic\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Djurkovic"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Djurkovic\AppData\Local\Temp\surefire1895608306264817275\surefirebooter-20250707225040019_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.1+11-39"/>
+    <property name="user.name" value="Djurkovic"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Djurkovic\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DJURKO~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.2.3"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Lua;C:\Program Files\nodejs\;C:\mingw64\bin;C:\Program Files\Microsoft Network Monitor 3\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-15.0.1\bin;C:\Program Files\Git\cmd;C:\Program Files\MATLAB\R2024b\bin;C:\Program Files\Calibre2\;C:\Program Files\PuTTY\;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python310\;C:\Users\Djurkovic\scoop\shims;C:\Ruby27-x64\bin;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Djurkovic\AppData\Local\Programs\Python\Python39\;C:\Users\Djurkovic\AppData\Local\Microsoft\WindowsApps;C:\Users\Djurkovic\AppData\Local\Microsoft\WindowsApps;C:\Users\Djurkovic\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Djurkovic\AppData\Local\Programs\Python;C:\ffmpeg\bin;C:\Users\Djurkovic\AppData\Local\atom\bin;C:\Users\Djurkovic\AppData\Roaming\npm;C:\Users\Djurkovic\miniconda3\Library\bin;C:\Users\Djurkovic\miniconda3\Scripts;C:\Users\Djurkovic\miniconda3\condabin;C:\Users\Djurkovic\.dotnet\tools;C:\Users\Djurkovic\AppData\Local\Pandoc\;C:\Users\Djurkovic\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\JetBrains\CLion 2024.2.1\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.1+11-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="display" classname="misc.LazniTest" time="0.289">
+    <system-out><![CDATA[[INFO] 2025-07-07 22:50:41 - Kesiram metapodatke za domensku klasu iznajmljivanjeapp.domain.Dozvola...
+[INFO] 2025-07-07 22:50:41 - Kesiram ime tabele za iznajmljivanjeapp.domain.Dozvola...
+[INFO] 2025-07-07 22:50:41 - Ime tabele uspesno kesirano za iznajmljivanjeapp.domain.Dozvola.
+[INFO] 2025-07-07 22:50:41 - Kesiram polja za iznajmljivanjeapp.domain.Dozvola...
+[INFO] 2025-07-07 22:50:41 - Uspesno kesirani metapodaci o Dozvola
+
+[INFO] 2025-07-07 22:50:41 - Konacan join string:
+SELECT `dozvola`.id AS `dozvola_id`,`dozvola`.kategorija AS `dozvola_kategorija`
+ FROM `dozvola` 
+
+[INFO] 2025-07-07 22:50:41 - Kesiram metapodatke za domensku klasu iznajmljivanjeapp.domain.Zaposleni...
+[INFO] 2025-07-07 22:50:41 - Kesiram ime tabele za iznajmljivanjeapp.domain.Zaposleni...
+[INFO] 2025-07-07 22:50:41 - Ime tabele uspesno kesirano za iznajmljivanjeapp.domain.Zaposleni.
+[INFO] 2025-07-07 22:50:41 - Kesiram polja za iznajmljivanjeapp.domain.Zaposleni...
+[INFO] 2025-07-07 22:50:41 - Uspesno kesirani metapodaci o Zaposleni
+
+[INFO] 2025-07-07 22:50:41 - Kesiram metapodatke za domensku klasu iznajmljivanjeapp.domain.Smena...
+[INFO] 2025-07-07 22:50:41 - Kesiram ime tabele za iznajmljivanjeapp.domain.Smena...
+[INFO] 2025-07-07 22:50:41 - Ime tabele uspesno kesirano za iznajmljivanjeapp.domain.Smena.
+[INFO] 2025-07-07 22:50:41 - Kesiram polja za iznajmljivanjeapp.domain.Smena...
+[INFO] 2025-07-07 22:50:41 - Uspesno kesirani metapodaci o Smena
+
+[INFO] 2025-07-07 22:50:41 - Kesiram metapodatke za domensku klasu iznajmljivanjeapp.domain.TerminDezurstva...
+[INFO] 2025-07-07 22:50:41 - Kesiram ime tabele za iznajmljivanjeapp.domain.TerminDezurstva...
+[INFO] 2025-07-07 22:50:41 - Ime tabele uspesno kesirano za iznajmljivanjeapp.domain.TerminDezurstva.
+[INFO] 2025-07-07 22:50:41 - Kesiram polja za iznajmljivanjeapp.domain.TerminDezurstva...
+[INFO] 2025-07-07 22:50:41 - Uspesno kesirani metapodaci o TerminDezurstva
+
+[INFO] 2025-07-07 22:50:41 - Konacan join string:
+SELECT `zaposleni`.id AS `zaposleni_id`,`zaposleni`.ime AS `zaposleni_ime`,`zaposleni`.prezime AS `zaposleni_prezime`,`zaposleni`.email AS `zaposleni_email`,`zaposleni`.sifra AS `zaposleni_sifra`,`zaposleni`.salt AS `zaposleni_salt`,`zaposleni`.admin AS `zaposleni_admin`,
+`zapter`.datum AS `zapter_datum`,`zapter`.idZaposleni AS `zapter_idZaposleni`,`zapter`.idTerminDezurstva AS `zapter_idTerminDezurstva`,`zapter`.vanredan AS `zapter_vanredan`,`zapter`.brojSati AS `zapter_brojSati`,`zapter`.fiksniBonus AS `zapter_fiksniBonus`,
+`termindezurstva`.id AS `termindezurstva_id`,`termindezurstva`.napomena AS `termindezurstva_napomena`,`termindezurstva`.tipTermina AS `termindezurstva_tipTermina`
+ FROM `zaposleni` 
+LEFT JOIN `zapter` ON `zapter`.`idZaposleni`=`zaposleni`.`id` 
+LEFT JOIN `termindezurstva` ON `termindezurstva`.`id`=`zapter`.`idTerminDezurstva` 
+
+[INFO] 2025-07-07 22:50:41 - Kesiram metapodatke za domensku klasu iznajmljivanjeapp.domain.Vozilo...
+[INFO] 2025-07-07 22:50:41 - Kesiram ime tabele za iznajmljivanjeapp.domain.Vozilo...
+[INFO] 2025-07-07 22:50:41 - Ime tabele uspesno kesirano za iznajmljivanjeapp.domain.Vozilo.
+[INFO] 2025-07-07 22:50:41 - Kesiram polja za iznajmljivanjeapp.domain.Vozilo...
+[INFO] 2025-07-07 22:50:41 - Uspesno kesirani metapodaci o Vozilo
+
+[INFO] 2025-07-07 22:50:41 - Kesiram metapodatke za domensku klasu iznajmljivanjeapp.domain.StavkaIznajmljivanja...
+[INFO] 2025-07-07 22:50:41 - Kesiram ime tabele za iznajmljivanjeapp.domain.StavkaIznajmljivanja...
+[INFO] 2025-07-07 22:50:41 - Ime tabele uspesno kesirano za iznajmljivanjeapp.domain.StavkaIznajmljivanja.
+[INFO] 2025-07-07 22:50:41 - Kesiram polja za iznajmljivanjeapp.domain.StavkaIznajmljivanja...
+[INFO] 2025-07-07 22:50:41 - Uspesno kesirani metapodaci o StavkaIznajmljivanja
+
+[INFO] 2025-07-07 22:50:41 - Kesiram metapodatke za domensku klasu iznajmljivanjeapp.domain.Iznajmljivanje...
+[INFO] 2025-07-07 22:50:41 - Kesiram ime tabele za iznajmljivanjeapp.domain.Iznajmljivanje...
+[INFO] 2025-07-07 22:50:41 - Ime tabele uspesno kesirano za iznajmljivanjeapp.domain.Iznajmljivanje.
+[INFO] 2025-07-07 22:50:41 - Kesiram polja za iznajmljivanjeapp.domain.Iznajmljivanje...
+[INFO] 2025-07-07 22:50:41 - Uspesno kesirani metapodaci o Iznajmljivanje
+
+[INFO] 2025-07-07 22:50:41 - Kesiram metapodatke za domensku klasu iznajmljivanjeapp.domain.Vozac...
+[INFO] 2025-07-07 22:50:41 - Kesiram ime tabele za iznajmljivanjeapp.domain.Vozac...
+[INFO] 2025-07-07 22:50:41 - Ime tabele uspesno kesirano za iznajmljivanjeapp.domain.Vozac.
+[INFO] 2025-07-07 22:50:41 - Kesiram polja za iznajmljivanjeapp.domain.Vozac...
+[INFO] 2025-07-07 22:50:41 - Uspesno kesirani metapodaci o Vozac
+
+[INFO] 2025-07-07 22:50:41 - Konacan join string:
+SELECT `vozilo`.id AS `vozilo_id`,`vozilo`.klasa AS `vozilo_klasa`,`vozilo`.proizvodjac AS `vozilo_proizvodjac`,`vozilo`.kupovnaCena AS `vozilo_kupovnaCena`,`vozilo`.godiste AS `vozilo_godiste`,`vozilo`.imeModela AS `vozilo_imeModela`,`vozilo`.kategorija AS `vozilo_kategorija`,
+`stavkaiznajmljivanja`.idIznajmljivanje AS `stavkaiznajmljivanja_idIznajmljivanje`,`stavkaiznajmljivanja`.rb AS `stavkaiznajmljivanja_rb`,`stavkaiznajmljivanja`.datumPocetka AS `stavkaiznajmljivanja_datumPocetka`,`stavkaiznajmljivanja`.datumZavrsetka AS `stavkaiznajmljivanja_datumZavrsetka`,`stavkaiznajmljivanja`.iznos AS `stavkaiznajmljivanja_iznos`,`stavkaiznajmljivanja`.idVozilo AS `stavkaiznajmljivanja_idVozilo`,
+`iznajmljivanje`.id AS `iznajmljivanje_id`,`iznajmljivanje`.datumSklapanja AS `iznajmljivanje_datumSklapanja`,`iznajmljivanje`.ukupanIznos AS `iznajmljivanje_ukupanIznos`,`iznajmljivanje`.idZaposleni AS `iznajmljivanje_idZaposleni`,`iznajmljivanje`.idVozac AS `iznajmljivanje_idVozac`,
+`zaposleni`.id AS `zaposleni_id`,`zaposleni`.ime AS `zaposleni_ime`,`zaposleni`.prezime AS `zaposleni_prezime`,`zaposleni`.email AS `zaposleni_email`,`zaposleni`.sifra AS `zaposleni_sifra`,`zaposleni`.salt AS `zaposleni_salt`,`zaposleni`.admin AS `zaposleni_admin`,
+`zapter`.datum AS `zapter_datum`,`zapter`.idZaposleni AS `zapter_idZaposleni`,`zapter`.idTerminDezurstva AS `zapter_idTerminDezurstva`,`zapter`.vanredan AS `zapter_vanredan`,`zapter`.brojSati AS `zapter_brojSati`,`zapter`.fiksniBonus AS `zapter_fiksniBonus`,
+`termindezurstva`.id AS `termindezurstva_id`,`termindezurstva`.napomena AS `termindezurstva_napomena`,`termindezurstva`.tipTermina AS `termindezurstva_tipTermina`,
+`vozac`.id AS `vozac_id`,`vozac`.ime AS `vozac_ime`,`vozac`.prezime AS `vozac_prezime`,`vozac`.email AS `vozac_email`,`vozac`.idDozvola AS `vozac_idDozvola`,
+`dozvola`.id AS `dozvola_id`,`dozvola`.kategorija AS `dozvola_kategorija`
+ FROM `vozilo` 
+LEFT JOIN `stavkaiznajmljivanja` ON `stavkaiznajmljivanja`.`idVozilo`=`vozilo`.`id` 
+LEFT JOIN `iznajmljivanje` ON `iznajmljivanje`.`id`=`stavkaiznajmljivanja`.`idIznajmljivanje` 
+LEFT JOIN `zaposleni` ON `zaposleni`.`id`=`iznajmljivanje`.`idZaposleni` 
+LEFT JOIN `vozac` ON `vozac`.`id`=`iznajmljivanje`.`idVozac` 
+LEFT JOIN `zapter` ON `zapter`.`idZaposleni`=`zaposleni`.`id` 
+LEFT JOIN `termindezurstva` ON `termindezurstva`.`id`=`zapter`.`idTerminDezurstva` 
+LEFT JOIN `dozvola` ON `dozvola`.`id`=`vozac`.`idDozvola` 
+
+[INFO] 2025-07-07 22:50:41 - Konacan join string:
+SELECT `termindezurstva`.id AS `termindezurstva_id`,`termindezurstva`.napomena AS `termindezurstva_napomena`,`termindezurstva`.tipTermina AS `termindezurstva_tipTermina`,
+`zapter`.datum AS `zapter_datum`,`zapter`.idZaposleni AS `zapter_idZaposleni`,`zapter`.idTerminDezurstva AS `zapter_idTerminDezurstva`,`zapter`.vanredan AS `zapter_vanredan`,`zapter`.brojSati AS `zapter_brojSati`,`zapter`.fiksniBonus AS `zapter_fiksniBonus`,
+`zaposleni`.id AS `zaposleni_id`,`zaposleni`.ime AS `zaposleni_ime`,`zaposleni`.prezime AS `zaposleni_prezime`,`zaposleni`.email AS `zaposleni_email`,`zaposleni`.sifra AS `zaposleni_sifra`,`zaposleni`.salt AS `zaposleni_salt`,`zaposleni`.admin AS `zaposleni_admin`
+ FROM `termindezurstva` 
+LEFT JOIN `zapter` ON `zapter`.`idTerminDezurstva`=`termindezurstva`.`id` 
+LEFT JOIN `zaposleni` ON `zaposleni`.`id`=`zapter`.`idZaposleni` 
+
+[INFO] 2025-07-07 22:50:41 - Konacan join string:
+SELECT `vozac`.id AS `vozac_id`,`vozac`.ime AS `vozac_ime`,`vozac`.prezime AS `vozac_prezime`,`vozac`.email AS `vozac_email`,`vozac`.idDozvola AS `vozac_idDozvola`,
+`dozvola`.id AS `dozvola_id`,`dozvola`.kategorija AS `dozvola_kategorija`
+ FROM `vozac` 
+LEFT JOIN `dozvola` ON `dozvola`.`id`=`vozac`.`idDozvola` 
+
+[INFO] 2025-07-07 22:50:41 - Konacan join string:
+SELECT `iznajmljivanje`.id AS `iznajmljivanje_id`,`iznajmljivanje`.datumSklapanja AS `iznajmljivanje_datumSklapanja`,`iznajmljivanje`.ukupanIznos AS `iznajmljivanje_ukupanIznos`,`iznajmljivanje`.idZaposleni AS `iznajmljivanje_idZaposleni`,`iznajmljivanje`.idVozac AS `iznajmljivanje_idVozac`,
+`zaposleni`.id AS `zaposleni_id`,`zaposleni`.ime AS `zaposleni_ime`,`zaposleni`.prezime AS `zaposleni_prezime`,`zaposleni`.email AS `zaposleni_email`,`zaposleni`.sifra AS `zaposleni_sifra`,`zaposleni`.salt AS `zaposleni_salt`,`zaposleni`.admin AS `zaposleni_admin`,
+`zapter`.datum AS `zapter_datum`,`zapter`.idZaposleni AS `zapter_idZaposleni`,`zapter`.idTerminDezurstva AS `zapter_idTerminDezurstva`,`zapter`.vanredan AS `zapter_vanredan`,`zapter`.brojSati AS `zapter_brojSati`,`zapter`.fiksniBonus AS `zapter_fiksniBonus`,
+`termindezurstva`.id AS `termindezurstva_id`,`termindezurstva`.napomena AS `termindezurstva_napomena`,`termindezurstva`.tipTermina AS `termindezurstva_tipTermina`,
+`vozac`.id AS `vozac_id`,`vozac`.ime AS `vozac_ime`,`vozac`.prezime AS `vozac_prezime`,`vozac`.email AS `vozac_email`,`vozac`.idDozvola AS `vozac_idDozvola`,
+`dozvola`.id AS `dozvola_id`,`dozvola`.kategorija AS `dozvola_kategorija`,
+`stavkaiznajmljivanja`.idIznajmljivanje AS `stavkaiznajmljivanja_idIznajmljivanje`,`stavkaiznajmljivanja`.rb AS `stavkaiznajmljivanja_rb`,`stavkaiznajmljivanja`.datumPocetka AS `stavkaiznajmljivanja_datumPocetka`,`stavkaiznajmljivanja`.datumZavrsetka AS `stavkaiznajmljivanja_datumZavrsetka`,`stavkaiznajmljivanja`.iznos AS `stavkaiznajmljivanja_iznos`,`stavkaiznajmljivanja`.idVozilo AS `stavkaiznajmljivanja_idVozilo`,
+`vozilo`.id AS `vozilo_id`,`vozilo`.klasa AS `vozilo_klasa`,`vozilo`.proizvodjac AS `vozilo_proizvodjac`,`vozilo`.kupovnaCena AS `vozilo_kupovnaCena`,`vozilo`.godiste AS `vozilo_godiste`,`vozilo`.imeModela AS `vozilo_imeModela`,`vozilo`.kategorija AS `vozilo_kategorija`
+ FROM `iznajmljivanje` 
+LEFT JOIN `zaposleni` ON `zaposleni`.`id`=`iznajmljivanje`.`idZaposleni` 
+LEFT JOIN `vozac` ON `vozac`.`id`=`iznajmljivanje`.`idVozac` 
+LEFT JOIN `stavkaiznajmljivanja` ON `stavkaiznajmljivanja`.`idIznajmljivanje`=`iznajmljivanje`.`id` 
+LEFT JOIN `zapter` ON `zapter`.`idZaposleni`=`zaposleni`.`id` 
+LEFT JOIN `termindezurstva` ON `termindezurstva`.`id`=`zapter`.`idTerminDezurstva` 
+LEFT JOIN `dozvola` ON `dozvola`.`id`=`vozac`.`idDozvola` 
+LEFT JOIN `vozilo` ON `vozilo`.`id`=`stavkaiznajmljivanja`.`idVozilo` 
+
+
+
+
+Dozvola: id = 889, kategorija = A
+Dozvola: id = 890, kategorija = B
+Dozvola: id = 891, kategorija = D
+
+
+
+Zaposleni: Admin Admin (admin@gmail.com) 
+Dodeljene smene: 
+Datum: null period: PREPODNE vanredan: false broj sati: 0 fiksni bonus: 0
+
+Zaposleni: keke kekovic (kek@gmail.com) 
+Dodeljene smene: 
+Datum: null period: PREPODNE vanredan: false broj sati: 0 fiksni bonus: 0
+
+Zaposleni: novi novi (c@gmail.com) 
+Dodeljene smene: 
+Datum: null period: PREPODNE vanredan: false broj sati: 0 fiksni bonus: 0
+
+Zaposleni: Novi Admin (admin2@gmail.com) 
+Dodeljene smene: 
+Datum: null period: PREPODNE vanredan: false broj sati: 0 fiksni bonus: 0
+
+Vozilo: id = 889, klasa = Automobil, proizvodjac = Dacia, kupovna cena = 666.0, godiste = 2021, ime modela = S Klasa, kategorija = BUDZET
+Vozilo: id = 895, klasa = Automobil, proizvodjac = Audi, kupovna cena = 3000.0, godiste = 2015, ime modela = A1, kategorija = LUKSUZ
+
+Termin Dezurstva: id = 889, period = PREPODNE, napomena = 
+Smene koje se vezuju za ovaj termin dezurstva:
+Smena: datum = null, odnosi ne za zaposlenog: null null, vanredan: false, broj sati = 0, fiksni bonus = 0
+
+Termin Dezurstva: id = 890, period = POPODNE, napomena = 
+Smene koje se vezuju za ovaj termin dezurstva:
+Smena: datum = null, odnosi ne za zaposlenog: null null, vanredan: false, broj sati = 0, fiksni bonus = 0
+
+Termin Dezurstva: id = 891, period = NOC, napomena = 
+Smene koje se vezuju za ovaj termin dezurstva:
+Smena: datum = null, odnosi ne za zaposlenog: null null, vanredan: false, broj sati = 0, fiksni bonus = 0
+
+
+Vozac Marko  Markovic(marko@gmail.com) poseduje dozvolu kategorije: B
+Vozac Novi  Noviji(novisa@gmail.com) poseduje dozvolu kategorije: B
+Vozac Boban  Marijanovic(bobicar@gmail.com) poseduje dozvolu kategorije: B
+Vozac HAAHAH  AHAHHHWDHJD(HAAHAHAXD@gmail.com) poseduje dozvolu kategorije: A
+
+Iznajmljivanje: id = 916, datum sklapanja = Mon Jul 07 00:00:00 CEST 2025, ukupan iznos = 888.0, sklopio zaposleni: Admin Admin, iznajmio vozac Marko Markovic(kontakt: marko@gmail.com)
+STAVKE IZNAJMLJIVANJA: 
+Redni broj 2, pocetak: Fri Jul 11 00:00:00 CEST 2025, zavrsetak: Sat Jul 19 00:00:00 CEST 2025, iznos = 555.0, vozilo: Dacia S Klasa
+
+Iznajmljivanje: id = 917, datum sklapanja = Mon Jul 07 00:00:00 CEST 2025, ukupan iznos = 999.0, sklopio zaposleni: Admin Admin, iznajmio vozac Novi Noviji(kontakt: novisa@gmail.com)
+STAVKE IZNAJMLJIVANJA: 
+Redni broj 1, pocetak: Tue Jul 01 00:00:00 CEST 2025, zavrsetak: Thu Jul 31 00:00:00 CEST 2025, iznos = 999.0, vozilo: Audi A1
+
+Iznajmljivanje: id = 919, datum sklapanja = Mon Jul 07 00:00:00 CEST 2025, ukupan iznos = 10000.0, sklopio zaposleni: Admin Admin, iznajmio vozac Novi Noviji(kontakt: novisa@gmail.com)
+STAVKE IZNAJMLJIVANJA: 
+Redni broj 1, pocetak: Wed Sep 17 00:00:00 CEST 2025, zavrsetak: Fri Sep 26 00:00:00 CEST 2025, iznos = 10000.0, vozilo: Audi A1
+
+Sva koriscenja vozila Dacia S Klasa:
+U iznajmljivanju id = 916, stavka broj 2, od Fri Jul 11 00:00:00 CEST 2025 do Sat Jul 19 00:00:00 CEST 2025
+Sva koriscenja vozila Audi A1:
+U iznajmljivanju id = 917, stavka broj 1, od Tue Jul 01 00:00:00 CEST 2025 do Thu Jul 31 00:00:00 CEST 2025
+U iznajmljivanju id = 919, stavka broj 1, od Wed Sep 17 00:00:00 CEST 2025 do Fri Sep 26 00:00:00 CEST 2025
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+</testsuite>
