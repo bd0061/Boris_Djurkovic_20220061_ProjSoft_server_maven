@@ -32,6 +32,73 @@ public class AppConfig {
     public int listeningPort = AppConfig.DEFAULT_LISTENING;
     public boolean isDb = AppConfig.DEFAULT_ISDB;
 
+    public String getImeBaze() {
+        return imeBaze;
+    }
+
+    public void setImeBaze(String imeBaze) {
+        this.imeBaze = imeBaze;
+    }
+
+    public String getImeTestBaze() {
+        return imeTestBaze;
+    }
+
+    public void setImeTestBaze(String imeTestBaze) {
+        this.imeTestBaze = imeTestBaze;
+    }
+
+    public int getDbPortNumber() {
+        return dbPortNumber;
+    }
+
+    public void setDbPortNumber(int dbPortNumber) {
+        this.dbPortNumber = dbPortNumber;
+    }
+
+    public String getDbDomain() {
+        return dbDomain;
+    }
+
+    public void setDbDomain(String dbDomain) {
+        this.dbDomain = dbDomain;
+    }
+
+    public String getDbUsername() {
+        return dbUsername;
+    }
+
+    public void setDbUsername(String dbUsername) {
+        this.dbUsername = dbUsername;
+    }
+
+    public String getDbPassword() {
+        return dbPassword;
+    }
+
+    public void setDbPassword(String dbPassword) {
+        this.dbPassword = dbPassword;
+    }
+
+    public DbEngine getDbEngine() {
+        return dbEngine;
+    }
+
+    public void setDbEngine(DbEngine dbEngine) {
+        this.dbEngine = dbEngine;
+    }
+
+    public int getListeningPort() {
+        return listeningPort;
+    }
+
+    public void setListeningPort(int listeningPort) {
+        this.listeningPort = listeningPort;
+    }
+
+    
+    
+    
     public AppConfig(String ib, String itb) {
         this.imeBaze = ib;
         this.imeTestBaze = itb;

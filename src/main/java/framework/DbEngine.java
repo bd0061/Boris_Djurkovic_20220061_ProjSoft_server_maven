@@ -9,5 +9,19 @@ package framework;
  * @author Djurkovic
  */
 public enum DbEngine {
-     MYSQL, POSTGRES, SQL_SERVER
+    MYSQL("MySQL"),
+    POSTGRES("PostgreSQL"),
+    SQL_SERVER("Microsoft SQL Server");
+
+    private final String display;
+
+    DbEngine(String display) {
+        this.display = display;
+    }
+
+    @Override
+    public String toString() {
+        return display;
+    }
+
 }

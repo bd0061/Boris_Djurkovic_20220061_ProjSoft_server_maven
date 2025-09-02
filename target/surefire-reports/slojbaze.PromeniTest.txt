@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: slojbaze.PromeniTest
--------------------------------------------------------------------------------
-Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.419 s -- in slojbaze.PromeniTest

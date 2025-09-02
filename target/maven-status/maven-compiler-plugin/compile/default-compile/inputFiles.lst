@@ -9,6 +9,8 @@ C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\injector\OpstiServis.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\injector\ServiceManager.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\injector\TypeToken.java
+C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\model\enumeracije\InsertBehaviour.java
+C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\model\FieldDescriptor.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\model\KriterijumDescriptor.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\model\KriterijumWrapper.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\model\MarkerRepository.java
@@ -41,6 +43,7 @@ C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\simplelogger\LogLevel.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\framework\simplelogger\SimpleLogger.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\bezbednost\PasswordHasher.java
+C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\ConfigEdit.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\controllers\DozvolaController.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\controllers\IznajmljivanjeController.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\controllers\SmenaController.java
@@ -52,17 +55,20 @@ C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\Dozvola.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\enumeracije\KategorijaEnum.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\enumeracije\TipTerminaEnum.java
+C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\insertwrappers\SmenaInsertWrapper.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\Iznajmljivanje.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\kljucevi\SmenaKljuc.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\kljucevi\StavkaIznajmljivanjaKljuc.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\Smena.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\StavkaIznajmljivanja.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\TerminDezurstva.java
+C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\uslovniobjekti\SmenaUslov.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\Vozac.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\Vozilo.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\domain\Zaposleni.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\exceptions\SistemskaOperacijaException.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\Main.java
+C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\MainGUI.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\repositories\dbrepositories\DozvolaDbRepository.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\repositories\dbrepositories\IznajmljivanjeDbRepository.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\repositories\dbrepositories\SmenaDbRepository.java
@@ -88,3 +94,4 @@ C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\services\VozacService.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\services\VoziloService.java
 C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\services\ZaposleniService.java
+C:\Users\Djurkovic\Documents\NetBeansProjects\Boris_Djurkovic_20220061_ProjSoft_server_maven\src\main\java\iznajmljivanjeapp\WholeNumberFilter.java

@@ -6,6 +6,7 @@ package framework.simplelogger;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.function.Consumer;
 
 /**
  *
@@ -14,7 +15,11 @@ import java.time.format.DateTimeFormatter;
 public class SimpleLogger {
 
     public static LogLevel LOG_SENSITIVITY = LogLevel.LOG_INFO;
+    private static Consumer<String> sink = System.out::println;
 
+    public static void setSink(Consumer<String> newSink) {
+        sink = newSink;
+    }
 
     public static void log(LogLevel level, String msg) {
         if(LOG_SENSITIVITY.ordinal() > level.ordinal()) {
@@ -23,11 +28,11 @@ public class SimpleLogger {
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter f = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String lvl = switch (level) {
-            case LogLevel.LOG_INFO -> "[INFO] ";
-            case LogLevel.LOG_WARN -> "[WARN] ";
-            case LogLevel.LOG_FATAL -> "[FATAL] ";
-            case LogLevel.LOG_ERROR -> "[ERROR] ";
+            case LOG_INFO -> "[INFO] ";
+            case LOG_WARN -> "[WARN] ";
+            case LOG_FATAL -> "[FATAL] ";
+            case LOG_ERROR -> "[ERROR] ";
         };
-        System.out.println(lvl + now.format(f) + " - " + msg);
+        sink.accept(lvl + now.format(f) + " - " + msg);
     }
 }

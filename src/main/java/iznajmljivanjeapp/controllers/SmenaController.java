@@ -172,7 +172,7 @@ public class SmenaController {
                             return Neuspeh("Sistem ne može da promeni smene.");
                         }
                     }
-                    Smena promene = (Smena) l.getFirst();
+                    Smena promene = (Smena) l.get(0);
                     Smena[] kljucevi = l.subList(1,l.size()).toArray(new Smena[0]);
                     smenaService.promeniSmena(promene, kljucevi);
                     vise = true;

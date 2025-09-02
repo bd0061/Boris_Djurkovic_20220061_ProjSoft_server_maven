@@ -72,7 +72,7 @@ public class IznajmljivanjeService extends OpstiServis {
                 //takodje moramo ovoj listi da dodamo stavke koje sada kreiramo za slucaj da u jednom iznajmljivanju neko pokusa da preklopi datume za isto vozilo
 
                 List<StavkaIznajmljivanja> postojeceStavkeZaVozilo = v.getStavke();
-                if(postojeceStavkeZaVozilo == null || (postojeceStavkeZaVozilo.size() == 1 && postojeceStavkeZaVozilo.getFirst().getDatumPocetka() == null)) {
+                if(postojeceStavkeZaVozilo == null || (postojeceStavkeZaVozilo.size() == 1 && postojeceStavkeZaVozilo.get(0).getDatumPocetka() == null)) {
                     postojeceStavkeZaVozilo = new ArrayList<>();
                 }
                 for(var ns : noveStavke) {
@@ -126,7 +126,7 @@ public class IznajmljivanjeService extends OpstiServis {
                 throw new Exception("Greska pri trazenju iznajmljivanja");
             }
 
-            var i = is.getFirst();
+            var i = is.get(0);
             stavkaIznajmljivanjaRepository.obrisi(i.getStavke().toArray(new StavkaIznajmljivanja[0]));
             iznajmljivanjeRepository.promeni(iznajmljivanje);
             stavkaIznajmljivanjaRepository.kreiraj(iznajmljivanje.getStavke().toArray(new StavkaIznajmljivanja[0]));

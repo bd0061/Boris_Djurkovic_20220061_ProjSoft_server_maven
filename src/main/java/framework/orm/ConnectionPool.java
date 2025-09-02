@@ -4,7 +4,6 @@
  */
 package framework.orm;
 
-
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import framework.config.AppConfig;
@@ -25,8 +24,9 @@ public final class ConnectionPool {
     private static boolean initialized = false;
 
     public static void initialize(AppConfig appconf) {
-        initialize(appconf,false);
+        initialize(appconf, false);
     }
+
     public static void initialize(AppConfig appconf, boolean isTest) {
         if (!initialized) {
             String ime = isTest ? appconf.imeTestBaze : appconf.imeBaze;
@@ -36,11 +36,11 @@ public final class ConnectionPool {
             HikariConfig config = new HikariConfig();
 
             config.setJdbcUrl(switch (appconf.dbEngine) {
-                case DbEngine.MYSQL ->
+                case MYSQL ->
                     "jdbc:mysql://" + appconf.dbDomain + ":" + appconf.dbPortNumber + "/" + ime;
-                case DbEngine.POSTGRES ->
+                case POSTGRES ->
                     "jdbc:postgresql://" + appconf.dbDomain + ":" + appconf.dbPortNumber + "/" + ime;
-                case DbEngine.SQL_SERVER ->
+                case SQL_SERVER ->
                     "jdbc:sqlserver://" + appconf.dbDomain + ":" + appconf.dbPortNumber + ";databaseName=" + ime;
             });
             config.setUsername(appconf.dbUsername);
@@ -53,13 +53,19 @@ public final class ConnectionPool {
             config.setConnectionTimeout(30000);
             config.setMaxLifetime(1800000);
 
-            dataSource = new HikariDataSource(config);
+            try {
+                dataSource = new HikariDataSource(config);
+            } catch (Exception e) {
+                SimpleLogger.log(LogLevel.LOG_FATAL, "Greska pri inicijalizaciji connection poola (da li je DB server pokrenut?)");
+                throw e;
+            }
 
             initialized = true;
         }
     }
+
     public static void shutdown() {
-        if(!initialized || dataSource == null) {
+        if (!initialized || dataSource == null) {
             SimpleLogger.log(LogLevel.LOG_WARN, "Pokusaj gasenja neinicijalizovanog connection poola");
             return;
         }
@@ -69,9 +75,9 @@ public final class ConnectionPool {
         initialized = false;
     }
 
-
     public static Connection getConnection() throws SQLException {
         if (!initialized) {
+            SimpleLogger.log(LogLevel.LOG_ERROR, "Pokusaj uzimanja konekcije pre inicijalizacije thread poola");
             throw new RuntimeException("Pokusaj uzimanja konekcije pre inicijalizacije thread poola");
         }
         return dataSource.getConnection();

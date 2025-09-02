@@ -95,7 +95,7 @@ public class ZaposleniService extends OpstiServis {
         if(zl.isEmpty()) {
             throw new SistemskaOperacijaException("Unet email ili šifra nisu ispravni. Molimo pokušajte ponovo.");
         }
-        Zaposleni z = zl.getFirst();
+        Zaposleni z = zl.get(0);
         if(!PasswordHasher.hashEquals(z.getSifra(),z.getSalt(),zaposleni.getSifra())) {
             SimpleLogger.log(LogLevel.LOG_ERROR, "Losa sifra: Ocekivano: " + z.getSifra() + " , dobijeno: " + PasswordHasher.hash(zaposleni.getSifra(),Base64.getDecoder().decode(z.getSalt())));
             throw new SistemskaOperacijaException("Unet email ili šifra nisu ispravni. Molimo pokušajte ponovo.");
@@ -103,7 +103,7 @@ public class ZaposleniService extends OpstiServis {
 
         if(!z.isAdmin()) {
             Date danas = new Date();
-            if(z.getSmene() == null || z.getSmene().isEmpty() || (z.getSmene().size() == 1 && z.getSmene().getFirst().getDatum() == null)) {
+            if(z.getSmene() == null || z.getSmene().isEmpty() || (z.getSmene().size() == 1 && z.getSmene().get(0).getDatum() == null)) {
                 throw new SistemskaOperacijaException("Zaposleni nema zabeleženu smenu danas. Ako mislite da je ovo greška, obratite se administratoru.");
             }
             for(Smena s : z.getSmene()) {

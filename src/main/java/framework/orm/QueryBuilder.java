@@ -112,7 +112,7 @@ public final class QueryBuilder<T extends Entitet> {
         }
         Object id = EntityManager.extractId(clazz, rs, columnNames);
 
-        Map<Object, Object> classCache = identityCache.computeIfAbsent(clazz, _ -> new HashMap<>());
+        Map<Object, Object> classCache = identityCache.computeIfAbsent(clazz, x -> new HashMap<>());
         Object instance = classCache.get(id);
         if (instance == null) {
             Constructor<?> ctor = clazz.getDeclaredConstructor(); //svi enttieti moraju da imaju prazan konstruktor
@@ -314,7 +314,7 @@ public final class QueryBuilder<T extends Entitet> {
                 var m = EntityCache.getMetadata((Class<T>)f.getType());
                 String tbl = m.imeTabele;
                 from.append("LEFT JOIN ").append(quote).append(tbl).append(quote).append(" ON ")
-                        .append(quote).append(tbl).append(quote).append(".").append(quote).append(EntityManager.vratiImePolja(m.primarniKljucevi.getFirst())).append(quote)
+                        .append(quote).append(tbl).append(quote).append(".").append(quote).append(EntityManager.vratiImePolja(m.primarniKljucevi.get(0))).append(quote)
                         .append("=").append(quote).append(rtbl).append(quote).append(".").append(quote).append(ano.joinColumn()).append(quote).append(" \n");
             } else if ( w.depthLevel == KriterijumWrapper.DepthLevel.FULL && f.isAnnotationPresent(OneToMany.class)) {
                 Type genericType = f.getGenericType();
@@ -345,7 +345,7 @@ public final class QueryBuilder<T extends Entitet> {
                     String fk = f2.getAnnotation(ManyToOne.class).joinColumn();
                     from.append("LEFT JOIN ").append(quote).append(tbl).append(quote).append(" ON ")
                             .append(quote).append(tbl).append(quote).append(".").append(quote).append(fk).append(quote)
-                            .append("=").append(quote).append(rtbl).append(quote).append(".").append(quote).append(EntityManager.vratiImePolja(metadata.primarniKljucevi.getFirst())).append(quote).append(" \n");
+                            .append("=").append(quote).append(rtbl).append(quote).append(".").append(quote).append(EntityManager.vratiImePolja(metadata.primarniKljucevi.get(0))).append(quote).append(" \n");
 
                 } catch (Exception ex) {
                     throw new RuntimeException("Lose definisiano mapiranje za OneToMany referencu " + y.getName() + " klase " + root.getName() + ": " + ex.getLocalizedMessage());

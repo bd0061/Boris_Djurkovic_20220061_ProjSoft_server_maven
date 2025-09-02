@@ -27,6 +27,11 @@ import org.reflections.Reflections;
  * @author Djurkovic
  */
 public class ControllerManager {
+    
+    public static void isprazniRute() {
+       tabelaRutiranja.clear();
+       SimpleLogger.log(LogLevel.LOG_INFO, "Uspesno ispraznjena tabela rutiranja");
+    }
 
     private static final Map<String, MethodInvoker> tabelaRutiranja = new HashMap<>();
 

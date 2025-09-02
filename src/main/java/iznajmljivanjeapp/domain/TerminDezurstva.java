@@ -36,9 +36,9 @@ public class TerminDezurstva extends Entitet {
     public String toString() {
         if(tipTermina == null) return "";
         return switch(tipTermina) {
-            case TipTerminaEnum.PREPODNE -> "Prepodne";
-            case TipTerminaEnum.POPODNE -> "Popodne";
-            case TipTerminaEnum.NOC -> "Noć";
+            case PREPODNE -> "Prepodne";
+            case POPODNE -> "Popodne";
+            case NOC -> "Noć";
         };
     }
 

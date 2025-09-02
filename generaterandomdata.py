@@ -24,7 +24,7 @@ DB_KONFIG = {
     'user': 'root',
     'password': '',
     'port': 3306,
-    'database': 'projektovanjesoftvera_seminarski_test2'
+    'database': 'projektovanjesoftvera_seminarski_fix'
 }
 
 # Povećavamo sve za najmanje red veličine

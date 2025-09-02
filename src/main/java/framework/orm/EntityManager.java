@@ -493,7 +493,7 @@ public final class EntityManager {
         }
 
         String upit = upitSb.toString();
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAA upit je: " + upit);
+        //System.out.println("AAAAAAAAAAAAAAAAAAAAAAA upit je: " + upit);
         boolean oneoff = false;
         try {
             if (con == null || con.isClosed()) {

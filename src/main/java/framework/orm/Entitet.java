@@ -74,7 +74,7 @@ public abstract class Entitet implements Serializable {
     public List<String> vratiListuImenaAtributa() {
         try {
             List<String> res = new ArrayList<>();
-            forEachValidField((field, _) -> {
+            forEachValidField((field, x) -> {
                 
                 //OneToMany lista polje nije clan same tabele
                 if(!field.isAnnotationPresent(OneToMany.class))
@@ -228,21 +228,21 @@ public abstract class Entitet implements Serializable {
         }
         try {
             return switch (a) {
-                case InAnotacijaEnum.DOUBLE ->
+                case DOUBLE ->
                     Double.parseDouble(s);
-                case InAnotacijaEnum.FLOAT ->
+                case FLOAT ->
                     Float.parseFloat(s);
-                case InAnotacijaEnum.INT ->
+                case INT ->
                     Integer.parseInt(s);
-                case InAnotacijaEnum.LONG ->
+                case LONG ->
                     Long.parseLong(s);
-                case InAnotacijaEnum.SHORT ->
+                case SHORT ->
                     Short.parseShort(s);
-                case InAnotacijaEnum.BYTE ->
+                case BYTE ->
                     Byte.parseByte(s);
-                case InAnotacijaEnum.STRING ->
+                case STRING ->
                     s;
-                case InAnotacijaEnum.CHAR ->
+                case CHAR ->
                     s.length() != 1 ? null : s.charAt(0);
             };
         } catch (NumberFormatException e) {
