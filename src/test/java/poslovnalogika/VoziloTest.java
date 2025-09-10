@@ -21,7 +21,7 @@ public class VoziloTest {
 
     @Test
     public void testKreirajVoziloSuccess() throws Exception {
-        Vozilo v = new Vozilo("Automobil", "Audi", 30000, 2021, "A6", KategorijaEnum.LUKSUZ);
+        Vozilo v = new Vozilo("Automobil", "Audi", 30000, 2021, "A6", KategorijaEnum.LUKSUZ,50);
         NetworkRequest req = new NetworkRequest("vozilo/kreiraj", v);
 
         NetworkResponse res = PoslovnaLogikaTestSuite.sendRequest(req);
@@ -35,7 +35,7 @@ public class VoziloTest {
 
     @Test
     public void testKreirajVoziloFailsDueToValidation() throws Exception {
-        Vozilo v = new Vozilo("Motor", "Dacia", 12000, 2020, "X125", KategorijaEnum.BUDZET); // violates custom rule
+        Vozilo v = new Vozilo("Motor", "Dacia", 12000, 2020, "X125", KategorijaEnum.BUDZET,50); // violates custom rule
         NetworkRequest req = new NetworkRequest("vozilo/kreiraj", v);
 
         NetworkResponse res = PoslovnaLogikaTestSuite.sendRequest(req);
@@ -45,7 +45,7 @@ public class VoziloTest {
 
     @Test
     public void testObrisiVoziloSuccess() throws Exception {
-        Vozilo v = new Vozilo("Automobil", "Fiat", 15000, 2020, "Punto", KategorijaEnum.BUDZET);
+        Vozilo v = new Vozilo("Automobil", "Fiat", 15000, 2020, "Punto", KategorijaEnum.BUDZET,50);
         NetworkRequest createReq = new NetworkRequest("vozilo/kreiraj", v);
         Vozilo created = (Vozilo) PoslovnaLogikaTestSuite.sendRequest(createReq).payload;
 
@@ -67,7 +67,7 @@ public class VoziloTest {
 
     @Test
     public void testPromeniVozilo() throws Exception {
-        Vozilo v = new Vozilo("Minibus", "Mercedes", 50000, 2023, "Sprinter", KategorijaEnum.SREDNJA);
+        Vozilo v = new Vozilo("Minibus", "Mercedes", 50000, 2023, "Sprinter", KategorijaEnum.SREDNJA,50);
         NetworkRequest createReq = new NetworkRequest("vozilo/kreiraj", v);
         Vozilo created = (Vozilo) PoslovnaLogikaTestSuite.sendRequest(createReq).payload;
 
@@ -82,8 +82,8 @@ public class VoziloTest {
 
     @Test
     public void testVratiSvaVozilaBezKriterijuma() throws Exception {
-        Vozilo v1 = new Vozilo("Automobil", "Audi", 30000, 2021, "A6", KategorijaEnum.LUKSUZ);
-        Vozilo v2 = new Vozilo("Automobil", "Fiat", 10000, 2020, "Punto", KategorijaEnum.BUDZET);
+        Vozilo v1 = new Vozilo("Automobil", "Audi", 30000, 2021, "A6", KategorijaEnum.LUKSUZ,50);
+        Vozilo v2 = new Vozilo("Automobil", "Fiat", 10000, 2020, "Punto", KategorijaEnum.BUDZET,50);
 
         PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", v1));
         PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", v2));
@@ -98,8 +98,8 @@ public class VoziloTest {
 
     @Test
     public void testVratiVozilaSaKriterijumima() throws Exception {
-        Vozilo v1 = new Vozilo("Automobil", "Fiat", 10000, 2020, "Punto", KategorijaEnum.BUDZET);
-        Vozilo v2 = new Vozilo("Automobil", "Audi", 20000, 2022, "A4", KategorijaEnum.LUKSUZ);
+        Vozilo v1 = new Vozilo("Automobil", "Fiat", 10000, 2020, "Punto", KategorijaEnum.BUDZET,50);
+        Vozilo v2 = new Vozilo("Automobil", "Audi", 20000, 2022, "A4", KategorijaEnum.LUKSUZ,50);
 
         PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", v1));
         PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", v2));
@@ -119,7 +119,7 @@ public class VoziloTest {
         List<?> list = (List<?>) res.payload;
         assertEquals(1, list.size());
 
-        Vozilo found = (Vozilo) list.getFirst();
+        Vozilo found = (Vozilo) list.get(0);
         assertEquals("Fiat", found.getProizvodjac());
     }
 }

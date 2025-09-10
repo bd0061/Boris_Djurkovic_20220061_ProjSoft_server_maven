@@ -51,7 +51,6 @@ public class StavkaIznajmljivanjaInMemoryRepository implements Repository<Stavka
         StavkaIznajmljivanja orig = storage.get(key);
         if (si.getDatumPocetka() != null) orig.setDatumPocetka(si.getDatumPocetka());
         if (si.getDatumZavrsetka() != null) orig.setDatumZavrsetka(si.getDatumZavrsetka());
-        if (si.getIznos() != null)             orig.setIznos(si.getIznos());
         if (si.getVozilo() != null)        orig.setVozilo(si.getVozilo());
 
         if (!orig.vrednosnaOgranicenja()) {
@@ -112,7 +111,6 @@ public class StavkaIznajmljivanjaInMemoryRepository implements Repository<Stavka
                 si.getRb(),
                 si.getDatumPocetka(),
                 si.getDatumZavrsetka(),
-                si.getIznos(),
                 si.getVozilo()
         );
         return copy;

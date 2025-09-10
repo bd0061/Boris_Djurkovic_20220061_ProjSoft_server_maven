@@ -83,7 +83,7 @@ def main():
     )
 
     # 3) vozilo: slučajan, realističan model, no Dacia+Motor
-    lista_vozila = []
+    lista_vozila = {}
     for _ in range(BROJ_VOZILA):
         while True:
             proiz = random.choice(PROIZVOĐAČI)
@@ -94,17 +94,18 @@ def main():
         cena  = round(random.uniform(7_000, 150_000), 2)
         godište = random.randint(2008, 2025)
         kat   = random.choice(KATEGORIJE)
-
+        cenaPoDanu = round(random.uniform(15, 250),2)
         cursor.execute(
             """
             INSERT INTO vozilo
-              (klasa, proizvodjac, kupovnaCena, godiste, imeModela, kategorija)
-            VALUES (%s,%s,%s,%s,%s,%s)
+              (klasa, proizvodjac, kupovnaCena, godiste, imeModela, kategorija, cenaPoDanu)
+            VALUES (%s,%s,%s,%s,%s,%s,%s)
             """,
-            (kl, proiz, cena, godište, model, kat)
+            (kl, proiz, cena, godište, model, kat, cenaPoDanu)
         )
         vid = cursor.lastrowid
-        lista_vozila.append((vid, kl))
+        lista_vozila[vid] = (kl,cenaPoDanu)
+        #lista_vozila.append((vid, kl))
 
     # 4) zaposleni: realistična imena, jedinstveni email, lozinka
     lista_zaposlenih = []
@@ -146,13 +147,13 @@ def main():
 
     # 6) mapiranje po dozvoli
     vozilo_po_dozvoli = {'A': [], 'B': [], 'D': []}
-    for vid, kl in lista_vozila:
-        if kl=="Motor":      vozilo_po_dozvoli['A'].append(vid)
-        elif kl=="Automobil":vozilo_po_dozvoli['B'].append(vid)
-        elif kl=="Minibus":  vozilo_po_dozvoli['D'].append(vid)
+    for vid, tuple in lista_vozila.items():
+        if tuple[0]=="Motor":      vozilo_po_dozvoli['A'].append(vid)
+        elif tuple[0]=="Automobil":vozilo_po_dozvoli['B'].append(vid)
+        elif tuple[0]=="Minibus":  vozilo_po_dozvoli['D'].append(vid)
 
     # 7) evidencija zauzeća vozila
-    raspored_vozila = {vid: [] for vid,_ in lista_vozila}
+    raspored_vozila = {vid: [] for vid in lista_vozila.keys()}
 
     # 8) kreiranje iznajmljivanja + više stavki
     for _ in range(BROJ_IZNAJMLJIVANJA):
@@ -166,7 +167,7 @@ def main():
         br_stavki = random.randint(1, MAKS_STAVKI_PO_IZNAJMLJIVANJU)
         ukupno_iznos = 0.0
         stavke = []
-
+        v_id = -1
         for rb in range(1, br_stavki + 1):
             dozvoljena_lista = vozilo_po_dozvoli[vozač_kat]
             # izaberemo ne–preklapajuće vozilo
@@ -181,10 +182,9 @@ def main():
                     raspored_vozila[v_id].append((poc, kraj))
                     break
 
-            cena_po_danu = random.uniform(15, 250)
-            iznos_stavke = round(trajanje * cena_po_danu, 2)
-            ukupno_iznos += iznos_stavke
-            stavke.append((rb, poc, kraj, iznos_stavke, v_id))
+
+            ukupno_iznos += lista_vozila[v_id][1] * ((kraj-poc).days + 1)
+            stavke.append((rb, poc, kraj,v_id))
 
         # ubacimo iznajmljivanje sa akumuliranim iznosom
         cursor.execute(
@@ -198,14 +198,14 @@ def main():
         iz_id = cursor.lastrowid
 
         # ubacimo sve stavke
-        for rb, poc, kraj, iznos_st, v_id in stavke:
+        for rb, poc, kraj, v_id in stavke:
             cursor.execute(
                 """
                 INSERT INTO stavkaiznajmljivanja
-                  (idIznajmljivanje, rb, datumPocetka, datumZavrsetka, iznos, idVozilo)
-                VALUES (%s,%s,%s,%s,%s,%s)
+                  (idIznajmljivanje, rb, datumPocetka, datumZavrsetka, idVozilo)
+                VALUES (%s,%s,%s,%s,%s)
                 """,
-                (iz_id, rb, poc, kraj, iznos_st, v_id)
+                (iz_id, rb, poc, kraj, v_id)
             )
 
     # 9) završetak

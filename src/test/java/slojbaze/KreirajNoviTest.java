@@ -399,11 +399,11 @@ public class KreirajNoviTest {
     @Test
     public void test21_KreirajNoviVozilo() {
         System.out.println("Ubacivanje ispravnog vozila");
-        Vozilo vozilo = new Vozilo("Automobil", "Mercedes", 15000.0, 2016, "S Klasa", KategorijaEnum.LUKSUZ);
+        Vozilo vozilo = new Vozilo("Automobil", "Mercedes", 15000.0, 2016, "S Klasa", KategorijaEnum.LUKSUZ,50);
         try {
             em.kreirajEntitet(vozilo);
         } catch (Exception e) {
-            fail("Ubacivanje ispravnog vozila nije uspelo.");
+            fail("Ubacivanje ispravnog vozila nije uspelo." + e);
         }
         System.out.println("Ubacivanje ispravnog vozila je uspelo.");
         System.out.println("---------------------------------------------------------------------------------");
@@ -412,7 +412,7 @@ public class KreirajNoviTest {
     @Test
     public void test22_KreirajNoviVoziloNullKlasa() {
         System.out.println("Ubacivanje neispravnog vozila - null klasa");
-        Vozilo vozilo = new Vozilo(null, "Mercedes", 15000.0, 2016, "S Klasa", KategorijaEnum.LUKSUZ);
+        Vozilo vozilo = new Vozilo(null, "Mercedes", 15000.0, 2016, "S Klasa", KategorijaEnum.LUKSUZ,50);
         try {
             em.kreirajEntitet(vozilo);
         } catch (Exception e) {
@@ -426,7 +426,7 @@ public class KreirajNoviTest {
     @Test
     public void test23_KreirajNoviVoziloNullProizvodjac() {
         System.out.println("Ubacivanje neispravnog vozila - null proizvodjac");
-        Vozilo vozilo = new Vozilo("Automobil", null, 15000.0, 2016, "S Klasa", KategorijaEnum.LUKSUZ);
+        Vozilo vozilo = new Vozilo("Automobil", null, 15000.0, 2016, "S Klasa", KategorijaEnum.LUKSUZ,50);
         try {
             em.kreirajEntitet(vozilo);
         } catch (Exception e) {
@@ -440,7 +440,7 @@ public class KreirajNoviTest {
     @Test
     public void test24_KreirajNoviVoziloNeispravnaCena() {
         System.out.println("Ubacivanje neispravnog vozila - neispravna kupovna cena");
-        Vozilo vozilo = new Vozilo("Automobil", "Mercedes", -15000.0, 2016, "S Klasa", KategorijaEnum.LUKSUZ);
+        Vozilo vozilo = new Vozilo("Automobil", "Mercedes", -15000.0, 2016, "S Klasa", KategorijaEnum.LUKSUZ,50);
         try {
             em.kreirajEntitet(vozilo);
         } catch (Exception e) {
@@ -454,7 +454,7 @@ public class KreirajNoviTest {
     @Test
     public void test25_KreirajNoviVoziloNeispravnoGodiste() {
         System.out.println("Ubacivanje neispravnog vozila - neispravno godiste(stariji od 2006)");
-        Vozilo vozilo = new Vozilo("Automobil", "Mercedes", 15000.0, 2003, "S Klasa", KategorijaEnum.LUKSUZ);
+        Vozilo vozilo = new Vozilo("Automobil", "Mercedes", 15000.0, 2003, "S Klasa", KategorijaEnum.LUKSUZ,50);
         try {
             em.kreirajEntitet(vozilo);
         } catch (Exception e) {
@@ -469,7 +469,7 @@ public class KreirajNoviTest {
     public void test26_KreirajNoviVoziloNullImeModela() {
         boolean flag = false;
         System.out.println("Ubacivanje neispravnog vozila - null ime modela");
-        Vozilo vozilo = new Vozilo("Motor", "Audi", 15000.0, 2016, null, KategorijaEnum.LUKSUZ);
+        Vozilo vozilo = new Vozilo("Motor", "Audi", 15000.0, 2016, null, KategorijaEnum.LUKSUZ,50);
         try {
             em.kreirajEntitet(vozilo);
         }
@@ -493,7 +493,7 @@ public class KreirajNoviTest {
     @Test
     public void test27_KreirajNoviVoziloNullEnum() {
         System.out.println("Ubacivanje neispravnog vozila - null kategorija");
-        Vozilo vozilo = new Vozilo("Automobil", "Mercedes", 15000.0, 2016, "S Klasa", null);
+        Vozilo vozilo = new Vozilo("Automobil", "Mercedes", 15000.0, 2016, "S Klasa", null,50);
         try {
             em.kreirajEntitet(vozilo);
         } catch (Exception e) {
@@ -507,7 +507,7 @@ public class KreirajNoviTest {
     @Test
     public void test28_KreirajNoviVoziloNeispravnaKlasa() {
         System.out.println("Ubacivanje neispravnog vozila - neispravna klasa");
-        Vozilo vozilo = new Vozilo("Svemirski brod", "Mercedes", 15000.0, 2016, "S Klasa", KategorijaEnum.BUDZET);
+        Vozilo vozilo = new Vozilo("Svemirski brod", "Mercedes", 15000.0, 2016, "S Klasa", KategorijaEnum.BUDZET,50);
         try {
             em.kreirajEntitet(vozilo);
         } catch (Exception e) {
@@ -521,7 +521,7 @@ public class KreirajNoviTest {
     @Test
     public void test29_KreirajNoviVoziloNeispravanProizvodjac() {
         System.out.println("Ubacivanje neispravnog vozila - neispravan proizvodjac");
-        Vozilo vozilo = new Vozilo("Automobil", "Jugo", 1555000.0, 2025, "S Klasa", KategorijaEnum.LUKSUZ);
+        Vozilo vozilo = new Vozilo("Automobil", "Jugo", 1555000.0, 2025, "S Klasa", KategorijaEnum.LUKSUZ,50);
         try {
             em.kreirajEntitet(vozilo);
         } catch (Exception e) {
@@ -535,7 +535,7 @@ public class KreirajNoviTest {
     @Test
     public void test30_KreirajNoviVoziloDaciaMotor() {
         System.out.println("Ubacivanje neispravnog vozila - motor dacia");
-        Vozilo vozilo = new Vozilo("Motor", "Dacia", 25.0, 2025, "S Klasa", KategorijaEnum.LUKSUZ);
+        Vozilo vozilo = new Vozilo("Motor", "Dacia", 25.0, 2025, "S Klasa", KategorijaEnum.LUKSUZ,50);
         try {
             em.kreirajEntitet(vozilo);
         } catch (Exception e) {
@@ -554,7 +554,7 @@ public class KreirajNoviTest {
         calendar.add(Calendar.DAY_OF_MONTH, 15);
         Date futureDate = calendar.getTime();
 
-        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, new Date(), futureDate, 999.0, new Vozilo(1));
+        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, new Date(), futureDate, new Vozilo(1));
         try {
             em.kreirajEntitet(stavkaIznajmljivanja);
         } catch (Exception e) {
@@ -572,7 +572,7 @@ public class KreirajNoviTest {
         calendar.add(Calendar.DAY_OF_MONTH, 15);
         Date futureDate = calendar.getTime();
 
-        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(-1), 1, new Date(), futureDate, 999.0, new Vozilo(1));
+        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(-1), 1, new Date(), futureDate, new Vozilo(1));
         try {
             em.kreirajEntitet(stavkaIznajmljivanja);
         } catch (Exception e) {
@@ -591,7 +591,7 @@ public class KreirajNoviTest {
         calendar.add(Calendar.DAY_OF_MONTH, 2);
         Date futureDate = calendar.getTime();
 
-        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, new Date(), futureDate, 999.0, new Vozilo(1));
+        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, new Date(), futureDate, new Vozilo(1));
         try {
             em.kreirajEntitet(stavkaIznajmljivanja);
         } catch (Exception e) {
@@ -610,7 +610,7 @@ public class KreirajNoviTest {
         calendar.add(Calendar.DAY_OF_MONTH, 62);
         Date futureDate = calendar.getTime();
 
-        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, new Date(), futureDate, 999.0, new Vozilo(1));
+        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, new Date(), futureDate, new Vozilo(1));
         try {
             em.kreirajEntitet(stavkaIznajmljivanja);
         } catch (Exception e) {
@@ -621,24 +621,6 @@ public class KreirajNoviTest {
         fail("Ubacivanje neispravne stavke iznajmljivanja je uspelo.");
     }
 
-    @Test
-    public void test35_KreirajNoviStavkaIznajmljivanjaLosIznos() {
-        System.out.println("Ubacivanje neispravne stavke iznajmljivanja - los iznos");
-
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_MONTH, 15);
-        Date futureDate = calendar.getTime();
-
-        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, new Date(), futureDate, -999.0, new Vozilo(1));
-        try {
-            em.kreirajEntitet(stavkaIznajmljivanja);
-        } catch (Exception e) {
-            System.out.println("Ubacivanje neispravne stavke iznajmljivanja nije uspelo.");
-            System.out.println("---------------------------------------------------------------------------------");
-            return;
-        }
-        fail("Ubacivanje neispravne stavke iznajmljivanja je uspelo.");
-    }
 
     @Test
     public void test36_KreirajNoviStavkaIznajmljivanjaNullDatumPocetak() {
@@ -648,7 +630,7 @@ public class KreirajNoviTest {
         calendar.add(Calendar.DAY_OF_MONTH, 15);
         Date futureDate = calendar.getTime();
 
-        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, null, futureDate, -999.0, new Vozilo(1));
+        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, null, futureDate, new Vozilo(1));
         try {
             em.kreirajEntitet(stavkaIznajmljivanja);
         } catch (Exception e) {
@@ -663,7 +645,7 @@ public class KreirajNoviTest {
     public void test37_KreirajNoviStavkaIznajmljivanjaNullDatumZavrsetak() {
         System.out.println("Ubacivanje neispravne stavke iznajmljivanja - null datum zavrsetka");
 
-        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, new Date(), null, -999.0, new Vozilo(1));
+        StavkaIznajmljivanja stavkaIznajmljivanja = new StavkaIznajmljivanja(new Iznajmljivanje(1), 1, new Date(), null, new Vozilo(1));
         try {
             em.kreirajEntitet(stavkaIznajmljivanja);
         } catch (Exception e) {

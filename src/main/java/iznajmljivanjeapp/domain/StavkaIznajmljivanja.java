@@ -17,6 +17,8 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
 import framework.orm.anotacije.kljuc.ManyToOne;
 import framework.orm.anotacije.kljuc.SlozenKljuc;
 import iznajmljivanjeapp.domain.kljucevi.StavkaIznajmljivanjaKljuc;
@@ -38,12 +40,8 @@ public class StavkaIznajmljivanja extends Entitet {
 
     @NotNull
     private Date datumZavrsetka;
-
-    @NotNull
-    @GreaterThan(0)
-    private Double iznos;
-
-    @ManyToOne(joinColumn = "idVozilo", poljaZaPrikazivanje = {"proizvodjac","imeModela:Model"})
+    
+    @ManyToOne(joinColumn = "idVozilo", poljaZaPrikazivanje = {"proizvodjac","imeModela:Model","cenaPoDanu:Cena po danu"})
     @NotNull
     private Vozilo vozilo;  // sk ka Vozilo
 
@@ -55,18 +53,17 @@ public class StavkaIznajmljivanja extends Entitet {
         return "StavkaIznajmljivanja{" + "iznajmljivanje=" + (iznajmljivanje != null ? iznajmljivanje.getId() : null) + ", rb=" + rb
                 + ", datumPocetka=" + (datumPocetka != null ? new SimpleDateFormat("yyyy-MM-dd").format(datumPocetka) : null)
                 + ", datumZavrsetka=" + (datumZavrsetka != null ? new SimpleDateFormat("yyyy-MM-dd").format(datumZavrsetka) : null)
-                + ", iznos=" + iznos + ", vozilo=" + vozilo + '}';
+                + ", vozilo=" + vozilo + '}';
     }
 
     public StavkaIznajmljivanja() {
     }
 
-    public StavkaIznajmljivanja(Iznajmljivanje iznajmljivanje, int rb, Date datumPocetka, Date datumZavrsetka, double iznos, Vozilo vozilo) {
+    public StavkaIznajmljivanja(Iznajmljivanje iznajmljivanje, int rb, Date datumPocetka, Date datumZavrsetka, Vozilo vozilo) {
         this.iznajmljivanje = iznajmljivanje;
         this.rb = rb;
         this.datumPocetka = datumPocetka;
         this.datumZavrsetka = datumZavrsetka;
-        this.iznos = iznos;
         this.vozilo = vozilo;
     }
 
@@ -75,18 +72,16 @@ public class StavkaIznajmljivanja extends Entitet {
         this.rb = rb;
     }
 
-    public StavkaIznajmljivanja(Iznajmljivanje iznajmljivanje, Date datumPocetka, Date datumZavrsetka, double iznos, Vozilo vozilo) {
+    public StavkaIznajmljivanja(Iznajmljivanje iznajmljivanje, Date datumPocetka, Date datumZavrsetka, Vozilo vozilo) {
         this.iznajmljivanje = iznajmljivanje;
         this.datumPocetka = datumPocetka;
         this.datumZavrsetka = datumZavrsetka;
-        this.iznos = iznos;
         this.vozilo = vozilo;
     }
 
-    public StavkaIznajmljivanja(Date datumPocetka, Date datumZavrsetka, double iznos, Vozilo vozilo) {
+    public StavkaIznajmljivanja(Date datumPocetka, Date datumZavrsetka, Vozilo vozilo) {
         this.datumPocetka = datumPocetka;
         this.datumZavrsetka = datumZavrsetka;
-        this.iznos = iznos;
         this.vozilo = vozilo;
     }
 
@@ -122,14 +117,6 @@ public class StavkaIznajmljivanja extends Entitet {
         this.datumZavrsetka = datumZavrsetka;
     }
 
-    public Double getIznos() {
-        return iznos;
-    }
-
-    public void setIznos(double iznos) {
-        this.iznos = iznos;
-    }
-
     public Vozilo getVozilo() {
         return vozilo;
     }
@@ -141,15 +128,20 @@ public class StavkaIznajmljivanja extends Entitet {
     @Override
     public boolean vrednosnaOgranicenja() {
 
-        if (!super.vrednosnaOgranicenja()) {
-            return false;
-        }
+//        if (!super.vrednosnaOgranicenja()) {
+//            return false;
+//        }
+//
+//        LocalDate localDate1 = datumPocetka.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
+//        LocalDate localDate2 = datumZavrsetka.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
+//
+//        long brojDana = ChronoUnit.DAYS.between(localDate1, localDate2);
+//
+//        return brojDana >= MIN_DANA && brojDana <= MAX_DANA;
 
-        LocalDate localDate1 = datumPocetka.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
-        LocalDate localDate2 = datumZavrsetka.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
 
-        long brojDana = ChronoUnit.DAYS.between(localDate1, localDate2);
-
+        long millisDiff = Math.abs(datumZavrsetka.getTime() - datumPocetka.getTime());
+        long brojDana = TimeUnit.MILLISECONDS.toDays(millisDiff) + 1;
         return brojDana >= MIN_DANA && brojDana <= MAX_DANA;
     }
 }

@@ -38,7 +38,7 @@ import org.junit.runners.MethodSorters;
 public class ObrisiTest {
 
     public static EntityManager em;
-    public static AppConfig cfg = new AppConfig("projektovanjesoftvera_seminarski", "projektovanjesoftvera_seminarski_test");
+    public static AppConfig cfg = new AppConfig("projektovanjesoftvera_seminarski","projektovanjesoftvera_seminarski_test");
 
     public ObrisiTest() {
     }
@@ -60,15 +60,15 @@ public class ObrisiTest {
 
         try {
             em.kreirajEntitet(new Zaposleni(666, "Marko", "Markovic", "markomarkovic@gmail.com", PasswordHasher.hash("eeee123", salt), Base64.getEncoder().encodeToString(salt)));
-            em.kreirajEntitet(new StavkaIznajmljivanja(new Iznajmljivanje(1), 2, new Date(), futureDate, 111.0, new Vozilo(1))); //nova stavka za demonstriranje brisanja kod DELETE /
+            em.kreirajEntitet(new StavkaIznajmljivanja(new Iznajmljivanje(1), 2, new Date(), futureDate, new Vozilo(1))); //nova stavka za demonstriranje brisanja kod DELETE /
             em.kreirajEntitet(new Smena(new Date(), new Zaposleni(666), new TerminDezurstva(2), false, 5, 0)); //novi zapter za demonstriranje brisanja kod DELETE /
-            em.kreirajEntitet(new Vozilo(44, "Minibus", "Mercedes", 15000.0, 2012, "kako god", KategorijaEnum.SREDNJA)); //novo vozilo za demonstriranje brisanja vozila koja se ne vezuju ni za jednu stavku iznajmljivanja
+            em.kreirajEntitet(new Vozilo(44, "Minibus", "Mercedes", 15000.0, 2012, "kako god", KategorijaEnum.SREDNJA,50)); //novo vozilo za demonstriranje brisanja vozila koja se ne vezuju ni za jednu stavku iznajmljivanja
             em.kreirajEntitet(new Dozvola(44, 'A')); // nova dozvola za koju se ne vezuje ni jedan vozac
             em.kreirajEntitet(new TerminDezurstva(44, "aaaa", TipTerminaEnum.NOC)); //nov td za koji se ne vezuje ni jedan zapter
             em.kreirajEntitet(new Vozac(44, "Petar", "Jovanovic", "petjov@yahoo.com", new Dozvola(1)));
             em.kreirajEntitet(new Iznajmljivanje(44, new Date(), 12345, new Zaposleni(1), new Vozac(1)));  //nov vozac za kojg se ne vezuje ni jedno iznajmljivanje
             em.kreirajEntitet(new Iznajmljivanje(447, new Date(), 12345, new Zaposleni(1), new Vozac(1)));
-            em.kreirajEntitet(new StavkaIznajmljivanja(new Iznajmljivanje(447), 1, new Date(), futureDate, 111.0, new Vozilo(1))); //nova stavka za demonstriranje brisanja kod DELETE /
+            em.kreirajEntitet(new StavkaIznajmljivanja(new Iznajmljivanje(447), 1, new Date(), futureDate, new Vozilo(1))); //nova stavka za demonstriranje brisanja kod DELETE /
         }
         catch(Exception e) {
             fail("Greska pri kreiranju pomocnih objekata");

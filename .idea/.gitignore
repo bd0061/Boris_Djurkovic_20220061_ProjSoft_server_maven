@@ -7,3 +7,5 @@
 /dataSources/
 /dataSources.local.xml
 ../target/
+*.class
+../venv/

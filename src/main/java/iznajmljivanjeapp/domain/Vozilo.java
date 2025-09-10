@@ -14,6 +14,7 @@ import iznajmljivanjeapp.domain.enumeracije.KategorijaEnum;
 import framework.orm.Entitet;
 import framework.orm.anotacije.kljuc.PrimarniKljuc;
 import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -25,6 +26,62 @@ public class Vozilo extends Entitet {
     public String toString() {
         return proizvodjac + " " + imeModela + " (id = " + id + ")";
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 89 * hash + Objects.hashCode(this.id);
+        hash = 89 * hash + Objects.hashCode(this.klasa);
+        hash = 89 * hash + Objects.hashCode(this.proizvodjac);
+        hash = 89 * hash + Objects.hashCode(this.kupovnaCena);
+        hash = 89 * hash + Objects.hashCode(this.godiste);
+        hash = 89 * hash + Objects.hashCode(this.imeModela);
+        hash = 89 * hash + Objects.hashCode(this.cenaPoDanu);
+        hash = 89 * hash + Objects.hashCode(this.kategorija);
+        hash = 89 * hash + Objects.hashCode(this.stavke);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Vozilo other = (Vozilo) obj;
+        if (!Objects.equals(this.klasa, other.klasa)) {
+            return false;
+        }
+        if (!Objects.equals(this.proizvodjac, other.proizvodjac)) {
+            return false;
+        }
+        if (!Objects.equals(this.imeModela, other.imeModela)) {
+            return false;
+        }
+        if (!Objects.equals(this.id, other.id)) {
+            return false;
+        }
+        if (!Objects.equals(this.kupovnaCena, other.kupovnaCena)) {
+            return false;
+        }
+        if (!Objects.equals(this.godiste, other.godiste)) {
+            return false;
+        }
+        if (!Objects.equals(this.cenaPoDanu, other.cenaPoDanu)) {
+            return false;
+        }
+        if (this.kategorija != other.kategorija) {
+            return false;
+        }
+        return Objects.equals(this.stavke, other.stavke);
+    }
+    
+    
 
 
     @NePrikazuj
@@ -52,6 +109,10 @@ public class Vozilo extends Entitet {
     private String imeModela;
     
     @NotNull
+    @GreaterThan(0)
+    private Double cenaPoDanu;
+    
+    @NotNull
     private KategorijaEnum kategorija;
 
 
@@ -74,16 +135,17 @@ public class Vozilo extends Entitet {
         this.id = id;
     }
 
-    public Vozilo(String klasa, String proizvodjac, double kupovnaCena, int godiste, String imeModela, KategorijaEnum kategorija) {
+    public Vozilo(String klasa, String proizvodjac, double kupovnaCena, int godiste, String imeModela, KategorijaEnum kategorija, double cenaPoDanu) {
         this.klasa = klasa;
         this.proizvodjac = proizvodjac;
         this.kupovnaCena = kupovnaCena;
         this.godiste = godiste;
         this.imeModela = imeModela;
         this.kategorija = kategorija;
+        this.cenaPoDanu = cenaPoDanu;
     }
 
-    public Vozilo(int id, String klasa, String proizvodjac, double kupovnaCena, int godiste, String imeModela, KategorijaEnum kategorija) {
+    public Vozilo(int id, String klasa, String proizvodjac, double kupovnaCena, int godiste, String imeModela, KategorijaEnum kategorija,double cenaPoDanu) {
         this.id = id;
         this.klasa = klasa;
         this.proizvodjac = proizvodjac;
@@ -91,8 +153,17 @@ public class Vozilo extends Entitet {
         this.godiste = godiste;
         this.imeModela = imeModela;
         this.kategorija = kategorija;
+        this.cenaPoDanu = cenaPoDanu;
     }
 
+    public Double getCenaPoDanu() {
+        return cenaPoDanu;
+    }
+
+    public void setCenaPoDanu(Double cenaPoDanu) {
+        this.cenaPoDanu = cenaPoDanu;
+    }
+    
     //geteri i seteri
     public Integer getId() {
         return id;

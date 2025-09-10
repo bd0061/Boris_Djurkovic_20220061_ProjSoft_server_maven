@@ -34,7 +34,7 @@ public class IznajmljivanjeTest {
         NetworkResponse r2 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozac/kreiraj", vozac));
         assertTrue(r2.success);
 
-        Vozilo vozilo1 = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA);
+        Vozilo vozilo1 = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA,50);
         NetworkResponse r3 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", vozilo1));
         assertTrue(r3.success);
         assertNotNull(r3.payload);
@@ -42,7 +42,7 @@ public class IznajmljivanjeTest {
         assertNotNull(vozilo1.getId());
 
 
-        Vozilo vozilo2 = new Vozilo("Automobil", "Fiat", 3000, 2009, "Multipla", KategorijaEnum.SREDNJA);
+        Vozilo vozilo2 = new Vozilo("Automobil", "Fiat", 3000, 2009, "Multipla", KategorijaEnum.SREDNJA,50);
         NetworkResponse r4 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", vozilo2));
         assertNotNull(r4.payload);
         vozilo2 = (Vozilo) r4.payload;
@@ -60,7 +60,6 @@ public class IznajmljivanjeTest {
                 1,
                 sdf.parse("2025-07-10"),
                 sdf.parse("2025-07-15"),
-                3000,
                 vozilo1
         );
 
@@ -69,11 +68,10 @@ public class IznajmljivanjeTest {
                 2,
                 sdf.parse("2025-08-10"),
                 sdf.parse("2025-08-15"),
-                2666,
                 vozilo2
         );
 
-        Iznajmljivanje iznajmljivanje = new Iznajmljivanje(new Date(), 5666,zaposleni,vozac);
+        Iznajmljivanje iznajmljivanje = new Iznajmljivanje(new Date(), 600,zaposleni,vozac);
         iznajmljivanje.setStavke(List.of(stavka1,stavka2));
 
         NetworkRequest req = new NetworkRequest("iznajmljivanje/kreiraj", iznajmljivanje);
@@ -102,7 +100,7 @@ public class IznajmljivanjeTest {
         NetworkResponse r2 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozac/kreiraj", vozac));
         assertTrue(r2.success);
 
-        Vozilo vozilo = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA);
+        Vozilo vozilo = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA,50);
         NetworkResponse r3 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", vozilo));
         assertTrue(r3.success);
 
@@ -118,7 +116,6 @@ public class IznajmljivanjeTest {
                 1,
                 sdf.parse("2025-07-10"),
                 sdf.parse("2025-07-15"),
-                3000,
                 vozilo
         );
 
@@ -151,7 +148,7 @@ public class IznajmljivanjeTest {
         NetworkResponse r2 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozac/kreiraj", vozac));
         assertTrue(r2.success);
 
-        Vozilo vozilo = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA);
+        Vozilo vozilo = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA,50);
         NetworkResponse r3 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", vozilo));
         assertTrue(r3.success);
 
@@ -168,7 +165,6 @@ public class IznajmljivanjeTest {
                 1,
                 sdf.parse("2025-07-10"),
                 sdf.parse("2025-07-15"),
-                3000,
                 vozilo
         );
 
@@ -191,7 +187,7 @@ public class IznajmljivanjeTest {
         NetworkResponse r2 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozac/kreiraj", vozac));
         assertTrue(r2.success);
 
-        Vozilo vozilo = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA);
+        Vozilo vozilo = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA,50);
         NetworkResponse r3 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", vozilo));
         assertTrue(r3.success);
         assertNotNull(r3.payload);
@@ -203,7 +199,6 @@ public class IznajmljivanjeTest {
                 1,
                 sdf.parse("2025-07-3"),
                 sdf.parse("2025-07-10"),
-                3000,
                 vozilo
         )));
 
@@ -220,7 +215,6 @@ public class IznajmljivanjeTest {
                 1,
                 sdf.parse("2025-07-10"),
                 sdf.parse("2025-07-15"),
-                3000,
                 vozilo
         );
 
@@ -242,7 +236,7 @@ public class IznajmljivanjeTest {
         NetworkResponse r2 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozac/kreiraj", vozac));
         assertTrue(r2.success);
 
-        Vozilo vozilo1 = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA);
+        Vozilo vozilo1 = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA,50);
         NetworkResponse r3 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", vozilo1));
         assertTrue(r3.success);
         assertNotNull(r3.payload);
@@ -263,7 +257,6 @@ public class IznajmljivanjeTest {
                 1,
                 sdf.parse("2025-07-10"),
                 sdf.parse("2025-07-15"),
-                3000,
                 vozilo1
         );
 
@@ -272,11 +265,10 @@ public class IznajmljivanjeTest {
                 2,
                 sdf.parse("2025-08-08"),
                 sdf.parse("2025-08-20"),
-                2666,
                 vozilo1
         );
 
-        Iznajmljivanje iznajmljivanje = new Iznajmljivanje(new Date(), 5666,zaposleni,vozac);
+        Iznajmljivanje iznajmljivanje = new Iznajmljivanje(new Date(), 950,zaposleni,vozac);
         iznajmljivanje.setStavke(List.of(stavka1,stavka2));
 
         NetworkRequest req = new NetworkRequest("iznajmljivanje/kreiraj", iznajmljivanje);
@@ -295,7 +287,7 @@ public class IznajmljivanjeTest {
         NetworkResponse r2 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozac/kreiraj", vozac));
         assertTrue(r2.success);
 
-        Vozilo vozilo1 = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA);
+        Vozilo vozilo1 = new Vozilo("Automobil", "Skoda", 20000, 2022, "Octavia", KategorijaEnum.SREDNJA,50);
         NetworkResponse r3 = PoslovnaLogikaTestSuite.sendRequest(new NetworkRequest("vozilo/kreiraj", vozilo1));
         assertTrue(r3.success);
         assertNotNull(r3.payload);
@@ -316,7 +308,6 @@ public class IznajmljivanjeTest {
                 1,
                 sdf.parse("2025-07-10"),
                 sdf.parse("2025-07-15"),
-                3000,
                 vozilo1
         );
 
@@ -325,7 +316,6 @@ public class IznajmljivanjeTest {
                 2,
                 sdf.parse("2025-07-08"),
                 sdf.parse("2025-07-20"),
-                2666,
                 vozilo1
         );
 

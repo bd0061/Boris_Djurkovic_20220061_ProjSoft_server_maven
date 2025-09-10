@@ -107,7 +107,6 @@ public class ZaposleniService extends OpstiServis {
                 throw new SistemskaOperacijaException("Zaposleni nema zabeleženu smenu danas. Ako mislite da je ovo greška, obratite se administratoru.");
             }
             for(Smena s : z.getSmene()) {
-                System.out.println(s.getDatum() + " " + s.getBrojSati() + " " + s.getFiksniBonus());
                 if(isSameDay(danas,s.getDatum())) {
                     return z;
                 }

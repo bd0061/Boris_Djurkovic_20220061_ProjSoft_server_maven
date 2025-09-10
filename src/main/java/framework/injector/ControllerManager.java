@@ -84,7 +84,6 @@ public class ControllerManager {
                         tabelaRutiranja.put(imeMetode,new MethodInvoker(k,m));
                     }
                 }
-                System.out.println();
             }
         }
         catch(Exception e) {

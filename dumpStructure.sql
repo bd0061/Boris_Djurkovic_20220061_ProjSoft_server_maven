@@ -1,6 +1,6 @@
 /*
 SQLyog Community v13.3.0 (64 bit)
-MySQL - 10.4.27-MariaDB-log : Database - projektovanjesoftvera_seminarski_test2
+MySQL - 10.4.27-MariaDB-log : Database - projektovanjesoftvera_seminarski_test
 *********************************************************************
 */
 
@@ -42,7 +42,7 @@ CREATE TABLE `iznajmljivanje` (
   KEY `datumsklapanja` (`datumSklapanja`),
   CONSTRAINT `iznajmljivanje_ibfk_1` FOREIGN KEY (`idZaposleni`) REFERENCES `zaposleni` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `iznajmljivanje_ibfk_2` FOREIGN KEY (`idVozac`) REFERENCES `vozac` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2038 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2005 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 /*Table structure for table `stavkaiznajmljivanja` */
 
@@ -53,7 +53,6 @@ CREATE TABLE `stavkaiznajmljivanja` (
   `rb` int(11) NOT NULL,
   `datumPocetka` date NOT NULL,
   `datumZavrsetka` date NOT NULL,
-  `iznos` double NOT NULL,
   `idVozilo` int(11) DEFAULT NULL,
   PRIMARY KEY (`idIznajmljivanje`,`rb`),
   KEY `idx_stavkaiznajmljivanja_idIznajmljivanje` (`idIznajmljivanje`),
@@ -87,7 +86,7 @@ CREATE TABLE `vozac` (
   UNIQUE KEY `unique_email` (`email`),
   KEY `idx_vozac_idDozvola` (`idDozvola`),
   CONSTRAINT `vozac_ibfk_1` FOREIGN KEY (`idDozvola`) REFERENCES `dozvola` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=202 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=201 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 /*Table structure for table `vozilo` */
 
@@ -101,9 +100,10 @@ CREATE TABLE `vozilo` (
   `godiste` int(11) NOT NULL,
   `imeModela` varchar(100) NOT NULL,
   `kategorija` int(11) NOT NULL,
+  `cenaPoDanu` double NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_imevozila` (`proizvodjac`,`imeModela`)
-) ENGINE=InnoDB AUTO_INCREMENT=2001 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2003 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 /*Table structure for table `zaposleni` */
 

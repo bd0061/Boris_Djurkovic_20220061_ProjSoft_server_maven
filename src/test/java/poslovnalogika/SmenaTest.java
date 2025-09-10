@@ -48,7 +48,7 @@ public class SmenaTest {
 
     private Zaposleni napraviTestZaposleni() throws Exception {
 
-        return napraviTestZaposleni(1).getFirst();
+        return napraviTestZaposleni(1).get(0);
     }
 
     private TerminDezurstva napraviTestTermin() throws Exception {

@@ -39,7 +39,8 @@ import org.junit.runners.MethodSorters;
 public class PromeniTest {
 
     public static EntityManager em;
-    public static AppConfig cfg = new AppConfig("projektovanjesoftvera_seminarski", "projektovanjesoftvera_seminarski_test");
+    public static AppConfig cfg = new AppConfig("projektovanjesoftvera_seminarski","projektovanjesoftvera_seminarski_test");
+
 
 
     public static final Vozac[] vozaci = new Vozac[] {new Vozac("Petar","Bojovic","petboj@gmail.com",new Dozvola(888)),
@@ -779,7 +780,7 @@ public class PromeniTest {
         calendar.add(Calendar.DAY_OF_MONTH, 25);
         Date d = calendar.getTime();
 
-        StavkaIznajmljivanja i = new StavkaIznajmljivanja(new Iznajmljivanje(888), 1, new Date(), d, 1357, new Vozilo(888));
+        StavkaIznajmljivanja i = new StavkaIznajmljivanja(new Iznajmljivanje(888), 1, new Date(), d, new Vozilo(888));
         try {
             em.promeniEntitet(i);
         } catch (Exception e) {
@@ -837,7 +838,7 @@ public class PromeniTest {
     public void test47_PromeniVoziloNormalno() {
         System.out.println("Provera da li ce vozilo biti normalno promenjeno");
 
-        Vozilo v = new Vozilo(2, "Minibus", "Fiat", 3150, 2008, "Multipla", KategorijaEnum.BUDZET);
+        Vozilo v = new Vozilo(2, "Minibus", "Fiat", 3150, 2008, "Multipla", KategorijaEnum.BUDZET,50);
         try {
             em.promeniEntitet(v);
         } catch (Exception e) {

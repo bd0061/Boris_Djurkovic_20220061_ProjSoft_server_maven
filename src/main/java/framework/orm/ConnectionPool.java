@@ -10,6 +10,7 @@ import framework.config.AppConfig;
 import framework.DbEngine;
 import framework.simplelogger.LogLevel;
 import framework.simplelogger.SimpleLogger;
+import javassist.Loader;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -57,6 +58,7 @@ public final class ConnectionPool {
                 dataSource = new HikariDataSource(config);
             } catch (Exception e) {
                 SimpleLogger.log(LogLevel.LOG_FATAL, "Greska pri inicijalizaciji connection poola (da li je DB server pokrenut?)");
+                SimpleLogger.log(LogLevel.LOG_FATAL, e.getMessage());
                 throw e;
             }
 

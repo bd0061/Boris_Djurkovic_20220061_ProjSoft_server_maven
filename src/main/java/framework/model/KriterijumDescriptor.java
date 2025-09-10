@@ -156,7 +156,7 @@ public record KriterijumDescriptor(boolean negate, Class<? extends Entitet> targ
             where.append(" AND ");
         }
         where.delete(where.length() - 5, where.length());
-        System.out.println("Konacan WHERE string:\n" + where.toString());
+        SimpleLogger.log(LogLevel.LOG_INFO,"Konacan WHERE string:\n" + where.toString());
 
 
         String finalString = joinString + where.toString();

@@ -38,7 +38,8 @@ public class VoziloInMemoryRepository implements Repository<Vozilo> {
                     v.getKupovnaCena(),
                     v.getGodiste(),
                     v.getImeModela(),
-                    v.getKategorija()
+                    v.getKategorija(),
+                    v.getCenaPoDanu()
             ));
             SimpleLogger.log(LogLevel.LOG_INFO, "Uspesno ubaceno vozilo " + v);
         }

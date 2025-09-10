@@ -36,7 +36,6 @@ public class RequestDispatcher implements Runnable {
 
     static {
         st = new HashSet<>();
-        System.out.println("ok");
         Reflections r = new Reflections("iznajmljivanjeapp.domain");
         st.addAll(r.getSubTypesOf(Entitet.class));
         st.add(NetworkRequest.class);
